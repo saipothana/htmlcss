@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <!-- commentss
+<html lang="en-us">
+    <title>Homepage</title>
+    <head>
+         <!-- Adds keywords -->
+        <meta name="keywords" content="tutorial,HTML"/>
+        
+        <!-- Sets page refresh time to 30 sec -->
+        <meta http-equiv="refresh" content="100"/>
+        
+        <!-- Sets page character-set encoding to UTF-8 -->
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        Hello World!
+        <p>First line <br/> Second line</p>
+        <p> I am first paragraph.</p>
+        <p> I am second paragraph.</p>
+        <!--<p>Paragraph is block element.</p>-->
+        <span>I am first span.</span>
+        <span>I am second span.</span>
+        <span>Span is inline element.</span>
+    </body>
+</html> -->
+
+<html lang="en-us">
+    <title>Homepage</title>
+    <head>
+         <!-- Adds keywords -->
+        <meta name="keywords" content="tutorial,HTML"/>
+        
+        <!-- Sets page refresh time to 30 sec -->
+        <meta http-equiv="refresh" content="100"/>
+        
+        <!-- Sets page character-set encoding to UTF-8 -->
+        <meta charset="UTF-8"/>
+    </head>
+<body>
+<p id="top1">the jeevans house is beautiful</p>
+
+<q>he is the no 1 contensre</q>
+
+<a href="#top1">go to top</a>
+
+</body>
+</html>
+

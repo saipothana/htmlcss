@@ -1,0 +1,34 @@
+body{
+background:green;
+}
+.kb{
+background-color:black;
+}
+.kb li{
+display:inline-block;
+color:white;
+padding-top:20px;
+margin-left:20px;
+font-size:20px;
+}
+.subitem{
+display:flex;
+background:black;
+}
+.sub1 li{
+display:block;
+margin-right:130px;
+list-style-type:none;
+}
+.sub2 li{
+margin-right:1300px;
+list-style-type:none;
+}
+.subitem{
+visibility:hidden;
+}
+
+.kb li:hover .subitem{
+visibility:visible;
+position:absolute;
+} 

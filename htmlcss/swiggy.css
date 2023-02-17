@@ -1,0 +1,171 @@
+*{
+margin:0;
+padding:0;
+font-family: 'Poppins', sans-serif;
+}
+.navbar{
+box-shadow:0 15px 40px -20px rgb(40 44 63/15%);
+position:fixed;
+top:0;
+left:0;
+right:0;
+height:80px;
+background:#fff;
+z-index:1000;
+padding:0 20px;
+}
+
+.navbar .nav{
+max-width:1200px;
+min-width:1200px;
+position:relative;
+margin:0 auto;
+height:80px;
+display:flex;
+justify-content:space-between;
+
+}
+.nav .left{
+display:flex;
+align-items:center;
+}
+.nav .left .logo{
+display:block;
+height:49px;
+margin-right:16px;
+transiton:transform 0.3s cubic-bezier(0.075,0.82,0.165,1)
+
+}
+.left .logo:hover{
+transform:scale(1.1);
+}
+.navbar .location-div{
+display:flex;
+position:relative;
+align-items:center;
+margin-left:30px;
+height:30px;
+cursor:pointer;
+margin-bottom:-1px;
+padding-right:10px;
+font-size:14px;
+}
+.location-div .other{
+font-width:700;
+color:#3d4152;
+float:left;
+padding-bottom:2px;
+border-bottom:2px solid black;
+}
+ .location-div .other:hover{
+color:#fc8019;
+border-bottom:2px solid #fc8019;
+}  
+.location-div .location{
+display:block;
+font-weight:300;
+padding-left:5px;
+margin-left:5px;
+color:#686b78;
+}
+.location-div .arrow-down{
+position:absolute;
+top:50%;
+right:-6%;
+transform:translateY(-50%);
+font-size:15px;
+color:#fc8019;
+font-weight:700;
+}
+.location-div .right{
+position:relative;
+}
+.right .items{
+display:flex;
+align-items:center;
+}
+.right .items{
+list-style-type:none;
+margin-right:36px;
+color:#3d4152;
+font-size:16px;font-weight:500;
+}
+.items .nav-item{
+display:flex;
+align-items:center;
+padding-left:28px;
+position:relative;
+height:80px;
+cursor:pointer;
+}
+.items .nav-item a{
+display:flex;
+align-items:center;
+text-decoration:none;
+color:#3d4152;
+font-size:16px;
+font-weight:400;
+
+
+}
+.items .nav-item a:hover{
+color:#fc8019;
+}
+
+.nav-item a span{
+padding-left:11px;
+}
+
+.restaurants .container{
+max-width:1200px;
+min-width:1200px;
+position:relative;
+margin:0 auto;
+padding-top:42px;
+top:80px;
+background:#fff;
+left:31px;
+}
+.container .item-bar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.item-bar .number{
+font-weight:600;
+font-size:28px;
+color:#4d4152;
+margin-top:-3px;
+}
+
+.item-bar::after{
+color:#3d4152;
+position:absolute;
+content:'';
+left:0;
+right:0;
+top:71px;
+height:1px;
+background:#e9e9eb;
+}
+
+.item-bar .filters{
+display:flex;
+align-items:center;
+}
+.filters div{
+font-size:16px;
+font-weight:300px;
+color:#686b78;
+margin-left:35px;
+cursor:pointer;
+}
+.filters div:hover{
+border-bottom:2px solid #282c3f;
+ 
+}
+.restaurant-list{
+    display:grid;
+      grid-template-columns: repeat(4,25%);
+}

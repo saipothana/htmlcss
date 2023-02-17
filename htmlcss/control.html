@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=UTF-8">
+<title>control</title>
+</head>
+<body>
+<h1 align="center"><font color="brown">Control statements in c</font></h1>
+<h4>Types of control statements</h4>
+<ol><li><a href="#1">Decision making statements(if,if-else)</a></li>
+<li><a href="#2">Selection statements(switch-case)</a></li>
+<li><a href="#3">Iteration statements(for,while,do-while)</a></li>
+<li><a href="#4">Jump statements(break,continue,goto)</a></li>
+</ol><hr color="brown">
+<p><h4><a id="1">Decision making statements(if,if-else)</a></h4>
+In decision making we have if,if-else,else-if,nested if...<br>
+<b><u>if:</u></b>&nbsp if is used to check when the condition is true only.<br><br>
+
+<b>Syntax:</b><br>
+if(cond){<br>
+//sratements<br>
+}<br>
+<b>Example</b><br>
+void main(){<br>
+int a=3;<br>
+if(a>2){<br>
+printf("true");<br>
+}<br>
+<br>
+<button type="button" onclick="alert('true')">output</button><br>
+
+<b><u>if-else:</u></b>&nbsp It is used to check when the condition is two conditions<br>
+
+<b>Syntax:</b><br>
+if(cond){<br>
+//sratements<br>
+}<br>
+else{
+<br>
+//statements<br>
+}<br>
+<b>Example</b><br>
+void main(){<br>
+int a=1;<br>
+if(a>2){<br>
+printf("true");<br>
+}<br>
+else{
+<br>
+printf("false");
+<br>
+}
+<br>
+<br>
+<button type="button" onclick="alert('false')">output</button><br>
+
+<b><u>else-if:</u></b>&nbsp It is used to check more than one conditions<br>
+
+<b>Syntax:</b><br>
+if(cond){<br>
+//sratements<br>
+}<br>
+else if(cond){
+<br>
+}<br>
+else if(cond){
+<br>
+}<br>
+else{
+<br>
+//statements<br>
+}<br>
+<b>Example</b><br>
+void main(){<br>
+int a=1;<br>
+if(a==1){<br>
+printf("a is 1");<br>
+}<br>
+else if(a==2){
+<br>
+printf("a is 2");
+}<br>
+else{
+<br>
+printf("a is neither 2 nor 1");
+<br>
+}
+<br>
+<button type="button" onclick="alert('a is one')">output</button><br>
+<br>
+<strong><Nested if:></strong>&nbsp It is also possible to embed or to nest if-else statements one within the other.<br> Nesting is useful in situations where one of several different courses of action need to be selected.
+<b>Syntax:</b><br><br>
+if(condition1)<br>
+{<br>
+// statement(s);<br>
+}<br>
+else if(condition2)<br>
+{<br>
+//statement(s);<br>
+}<br>
+.<br>
+.<br>
+else if (conditionN)<br>
+{<br>
+//statement(s);<br>
+}<br>
+else<br>
+{<br>
+//statement(s);<br>
+}<br>
+
+<b>Example:</b><br>
+
+void main( ) {<br>
+    int a, b,c;<br>
+    a=6,b= 5, c=10;<br>
+    if(a>b)<br>
+      {<br>
+        if(b>c)<br>
+          {<br>
+            printf("nGreatest is: " , a);<br>
+          }<br>
+        else if(c>a)<br>
+           {<br>
+             printf("nGreatest is: ", c);<br>
+           }<br>
+      }<br>
+    else if(b>c)     //outermost if-else block<br>
+       {<br>
+         printf("nGreatest is: " , b);<br>
+       }<br>
+      else<br>
+      {<br>
+        printf( "nGreatest is: " , c);<br>
+      }<br>
+<br>
+<button type="button" onclick="alert('nGratest is 10')">output</button><br></p>
+<hr color="brown">
+
+<p><h4><a id="2">Selection statements(switch-case)</a></h4>
+<b>Switch statement:</b><br>
+A switch statement is used for multiple way selections that will branch into different code segments based on the value of a variable or expression. <br>
+This expression or variable must be of integer data type.<br>
+
+<b>Syntax:</b><br>
+switch(expression){<br>
+case 1:
+<br>
+//statements<br>
+break;<br>
+case 2:
+<br>
+//statements<br>
+break;<br>
+case 3:
+<br>
+//statements<br>
+break;<br>
+
+<br>
+default:
+<br>
+//statements<br>
+}<br><br>
+
+<b>Example:</b><br>
+void main( ) {
+<br>
+  int day=5;<br>
+  
+
+  switch(day)<br>
+    {<br>
+      case 1:<br>
+        printf("Sunday");<br>
+        break;<br>
+      case 2:<br>
+        printf("Monday");<br>
+        break;<br>
+      case 3:<br>
+        printf("Tuesday");<br>
+        break;<br>
+      case 4:<br>
+        printf("Wednesday");<br>
+        break;<br>
+      case 5:<br>
+        printf("Thursday");<br>
+        break;<br>
+      case 6:<br>
+        printf("Friday");<br>
+        break;<br>
+      case 7:<br>
+        printf("Saturday");<br>
+        break;<br>
+      default:<br>
+        printf("Invalid choice");<br>
+      }<br>
+
+<button type="button" onclick="alert('Thursday')">output</button><br>
+<hr color="brown"></p>
+
+<p><h4><a id="3">Iteration statements(for,while,do-while)</a></h4><br>
+Iteration statements are used to execute a particular set of instructions repeatedly until a particular condition is met or for a fixed number of iterations.<br>
+<ul><li>forloop</li>
+<li>whileloop</li>
+<li>do-whileloop</li>
+</ul><br>
+<strong>forloop:</strong>&nbsp it is used when we know the no.of iterations.It is entry control loop.<br>
+<b>Syntax:</b><br>
+
+for(initialization; termination; increment/decrement) { //statements to be executed <br>
+}<br>
+
+<b>Example:</b><br>
+void main(){<br>
+for(int i=1;i<=10;i++){<br>
+printf("hi");<br>
+}<br>
+
+<button type="button" onclick="alert('hi hi hi hi hi hi hi hi hi hi')">output</button><br><br>
+
+<strong>Whileloop:</strong>&nbsp it is used when we don't know the no.of iterations.It is entry control loop.<br>
+<b>Syntax:</b><br>
+while(cond){<br>
+//statements<br>
+}<br>
+
+<b>Example:</b><br>
+void main(){<br>
+int i=1;
+<br>
+while(i<=10){<br>
+
+printf("hi");<br>
+i++}<br><br>
+
+<button type="button" onclick="alert('hi hi hi hi hi hi hi hi hi hi')">output</button><br><br>
+
+<strong>do-Whileloop:</strong>&nbsp it is used when we don't know the no.of iterations.It is exit control loop.<br>
+<b>Syntax:</b><br>
+do{<br>
+//statements<br>
+}while();<br>
+
+<b>Example:</b><br>
+void main(){<br>
+int i=1;
+<br>
+do{<br>
+
+printf("hi");<br>
+i++}while(i<=10);<br><br>
+
+<button type="button" onclick="alert('hi hi hi hi hi hi hi hi hi hi')">output</button><br><br><hr color="brown"></p>
+<p><h4><a id="4">Jump statements(break,continue,goto)</a></h4>
+
+<strong>break:</strong>&nbsp it is used to come out of the loop<br><br>
+ <strong>continue:</strong>&nbsp it is used to skip the particular condition <br><br>
+<strong>goto:</strong>&nbsp It is used to goto the previous<br>
+<hr color="brown"></p>
+</body>
+</html>

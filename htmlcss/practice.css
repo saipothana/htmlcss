@@ -1,0 +1,56 @@
+body{
+    background-color: grey;
+    font-size: large;
+}
+header{
+    border:dotted;
+    border-width: 10px,3px,4px;
+background-color: aqua;
+margin:10px;
+padding-bottom: 15px;
+}
+h2{
+    text-transform: lowercase;
+    background-color: rgb(16, 169, 26);
+    color:dimgray;
+}
+
+footer{
+    background-color: aqua;
+    height:100px;
+}
+img{
+    width:75px;
+}
+h1{
+    text-align: center;
+    color:white;
+}
+nav a{
+    background-color: white;
+    color:black;
+    font-size:150%;
+    width: 22%;
+    display: inline-block;
+    text-align: center;
+    margin:10px;
+    
+}
+.half{
+    float:left;
+    display:inline-block;
+    width:45%;
+    margin-right: 2%;
+}
+.full{
+    float:left;
+    display:inline-block;
+    width:45%;
+    margin-right: 2%;
+}
+.whole{
+    clear:both;
+}
+section{
+    background-color: grey;
+}

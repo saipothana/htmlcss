@@ -1,0 +1,2936 @@
+<a href="#head">goto</a>
+
+<p id="head">hi</p>
+
+self-closing tags:
+<br>,<hr>,<img>
+
+<video controls autoplay><source src="C:\Users\jeevan\Videos\Pushpa-The-Rise-Telugu-kbd9f-2021.mp4">
+</video>
+
+
+
+
+
+
+
+
+
+1 <!DOCTYPE HTML>
+
+2 <HEAD> !...INCLUDE METADATA-LANG,TITLE AND WE HAVE SUPPORTFILES--JAVASCRIPT,STYLING ADDONS
+    THE METADATA IS INVISIBLE(NOT DISPLAYED)
+ 3 <BODY>...(DISPLAYED)
+
+
+=========
+<div>--block level element ..used to identify large groupings of content
+<span>..inline element ...used to identify small group of elements
+
+<!-- span -->....comemts in html
+=======================================
+TEXT BASED ELEMENTS
+=======================================
+1 Headings(block level element)
+.we have 6 diff rankings(<h1>to <h6>)
+<h1>...it is the primary heading..h1>h2.h3...>h6
+in order to put text to center we use <h1 class="text-primary-text-center">hi</h1>
+anf for secondary headings we use
+ <h1 class="text-center">hi</h1>
+
+ ====================================
+
+2. paragraphs(block level)
+.para is followed by headings<p>
+=============================
+
+3. bold text with strong
+.<strong>,<b>
+<p><strong>caution</strong>.hi</p>....o/p !--caution with bold 
+<p><b>uoy</b></p>///light bolt
+==============================================
+4.italic text
+<em>..prefered mostly
+<i>
+===============================================
+STRUCTURE BASED ELEMENTS
+===============================================
+1 <header>
+is used to identify the top of a page, article, section, or other segment of a page. In general, the <header> element may include a heading, introductory text, and even navigation.
+<header>element is in the body
+
+==================================
+2.<section>
+
+3.<footer>
+
+-   &ndash;
+c   &copy;
+======================================
+creating hyper links
+===========================================
+hyperlinks created using <a        >
+and href(uesd to identify desti of link)
+ 
+===========
+linking with mail
+
+<a href="mailto:pothanssai&@gmail.com?subject=Reaching%20out&body=How%20are%20u">email me</a>
+=================================
+<a href="htmlbasics.html">simpleconcept</a>
+
+==================================================================
+
+==================================================================
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+      |     
+LISTS- 
+1.  unordered lists
+      
+..<ul> and <li>(for geting list with dots we use this)
+
+<ul>
+  <li>Orange</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+
+
+o/p   .orange
+      .Green
+      .Blue
+
+2. ordered lists(to get lists with numbers)
+<ol>and <li>
+
+<ol>
+  <li>Head north on N Halsted St</li>
+  <li>Turn right on W Diversey Pkwy</li>
+  <li>Turn left on N Orchard St</li>
+</ol>
+
+o/p
+ 1.Head north on N Halsted St
+ 2.Turn right on W Diversey Pkwy
+ 3.Turn left on N Orchard St
+=======
+in ordered lists we have Start,reversed,value attribute
+===========
+1.Start attribute
+-----------
+it is used to tell the start of list i.e number to which the list start
+
+<ol start="30">
+  <li>Head north on N Halsted St</li>
+  <li>Turn right on W Diversey Pkwy</li>
+  <li>Turn left on N Orchard St</li>
+</ol>
+
+o/p
+
+30.Head north on N Halsted St
+31.Turn right on W Diversey Pkwy
+32.Turn left on N Orchard St
+--(if num=32 then it start from 32 ,33, 34)
+
+====================
+Reversed attributr
+-------------------
+used to reverse the list
+
+<ol reversed>
+  <li>Head north on N Halsted St</li>
+  <li>Turn right on W Diversey Pkwy</li>
+  <li>Turn left on N Orchard St</li>
+</ol>
+
+o/p
+3.Head north on N Halsted St
+2.Turn right on W Diversey Pkwy
+1.Turn left on N Orchard St
+
+==============================
+3.value attribute
+------------------------------
+to change value within list we use this
+
+<ol>
+  <li>Head north on N Halsted St</li>
+  <li value="9">Turn right on W Diversey Pkwy</li>
+  <li>Turn left on N Orchard St</li>
+</ol>
+
+o/p
+1.Head north on N Halsted St
+9.Turn right on W Diversey Pkwy
+10.Turn left on N Orchard St
+
+==========================================
+
+=========================================
+3.description lists
+--------------------------------------------
+<dl> and <dt>..for side head like about rohitsharma ...<dd>...it is the description like what about rohit
+
+<dl>
+  <dt>study</dt>
+  <dd>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books</dd>
+  <dt>design</dt>
+  <dd>A plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made</dd>
+  <dd>Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or material object</dd>
+  <dt>business</dt>
+  <dt>work</dt>
+  <dd>A person's regular occupation, profession, or trade</dd>
+</dl>
+
+o/p
+
+study
+The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books
+design
+A plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made
+Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or material object
+business
+work
+A person's regular occupation, profession, or trade
+
+=======================================================================
+=========================================================================
+
+4.Nested lists
+-------------------------------------------------------------------------
+html
+------
+<ul>
+<li> 1 ul</li>
+<li> 2 ul</li>
+<li>3 ul:
+<ol>
+<li> one</li>
+<li> two</li>
+</ol>
+</li>
+<li>4 ul</li>
+<li>5 ul</li>
+</ul>
+
+-----
+css for styling
+----------------
+
+ ul {
+  list-style: decimal;
+ 
+}
+ol {
+  list-style: circle;
+  
+}
+----
+o/p
+
+1. 1ul
+2. 2 ul
+3. 3ul:
+      .one
+      .two
+4. 4ul
+5. 5ul
+=======================
+
+/* THIS IS CSS */
+
+===================
+list type styling
+===================
+syntax: list-style:type
+
+list-style:circle;(this give .
+list-style: decimal; (this give square)
+========================================
+
+========================================
+Adding images(inline)
+-------------------------------
+.to add image we use <img >
+.src the value is url
+.alt..in this we describe content of text
+
+<img src="dog.jpg" alt="A black, brown, and white dog wearing a kerchief">
+
+o/p:
+dog photo
+=========================
+for sizing images we use css
+==============================
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+so here we are specifying i.e we are allocating some space to image
+=============================================
+creating table
+============================================
+
+
+<table>
+<tr>
+<th scope="col">ITEM</th>
+<th scope="col">list</th>
+<th scope="col">present</th>
+</tr>
+<tr>
+<td>playername</td>
+<td>runs</td>
+<td>rank</td>
+</tr>
+<tr>
+<td>rs</td>
+<td>20k</td>
+<td>#1</td>
+</tr>
+</table>
+===========================
+table header(th)--hihgliting the data
+<table>
+<tr>
+<td>playername</td>
+<td>runs</td>
+<td>rank</td>
+</tr>
+<tr>
+<td>rs</td>
+<td>20k</td>
+<td>#1</td>
+</tr>
+</table>
+
+o/p
+ITEM	list	present
+playername	runs	rank
+rs	20k	#1
+playername	runs	rank
+rs	20k	#1
+
+
+=============================
+basics code witing
+
+==========================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ABOUT CRICKET PLAYES</title>
+ul{
+list-style:square;
+}
+ol{
+list-style:decimals;
+}
+</head>
+<header>
+<body>
+<h1><strong>CRICKETPLAYERS</strong></h1>
+<p><strong>this</strong> article is about cricket players.Here we are going to discuss about what is the stats of a players of<em> different countries</em></p>
+<ul>
+<li>odi
+<ol>
+<li>rohithsharma</li>
+<li>viratkohli</li>
+<li>warner</li> 
+</ol>
+</li>
+<li>tests:
+<ol>
+<li>rohith</li>
+<li>pujara</li>
+<li>smith</li>
+</ol>
+</li>
+<li>t20:
+<ol>
+<li>rohith</li>
+<li>suryakumar</li>
+<li>kohli</li>
+</ol>
+</li>
+</ul>
+<dl>
+<dt>rohit sharma</dt>
+<dd>RS is a wonderful<b>cricketplayer</b>.he is currently top 1 in all formats.</dd>
+<dt>kohli</dt>
+<dd>he is currently the king of cricket and he is a <em>classic</em> batsman in the world</dd>
+<dt>sk dw ss</dt>
+<dd>one <b>indian</b> two <i>aussies</i> these are the great batsman in history of t20 and tests and odi's</dd>
+</dl>
+<a href="sec.html">Rohitsharma</a>
+<a href="mail to:saijeevankumarpothana@gmail.com?subject=any%20quiries&body=contact%20me">email me </a>
+</body>
+</header>
+</html>
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+end of code//there are some errors in code the updated code is below
+============================================================================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ABOUT CRICKET PLAYES</title>
+
+</head>
+
+<body>
+<header>
+<h1><strong>CRICKETPLAYERS</strong></h1>
+<p><strong>this</strong> article is about cricket players.Here we are going to discuss about what is the stats of a players of<em> different countries</em></p>
+</header>
+<ul>
+<li>odi
+<ol>
+<li>rohithsharma</li>
+<li>viratkohli</li>
+<li>warner</li> 
+</ol>
+</li>
+<li>tests:
+<ol>
+<li>rohith</li>
+<li>pujara</li>
+<li>smith</li>
+</ol>
+</li>
+<li>t20:
+<ol>
+<li>rohith</li>
+<li>suryakumar</li>
+<li>kohli</li>
+</ol>
+</li>
+</ul>
+<dl>
+<dt>rohit sharma</dt>
+<dd>RS is a wonderful<b>cricketplayer</b>.he is currently top 1 in all formats.</dd>
+<dt>kohli</dt>
+<dd>he is currently the king of cricket and he is a <em>classic</em> batsman in the world</dd>
+<dt>sk dw ss</dt>
+<dd>one <b>indian</b> two <i>aussies</i> these are the great batsman in history of t20 and tests and odi's</dd>
+</dl>
+<a href="sec.html">Rohitsharma</a>
+<a href="mailto:saijeevankumarpothana@gmail.com?subject=any%20quiries&body=contact%20me">email me </a>
+<a href="mailto:saijeevankumarpothana@gmail.com?">saijeevankumarpothana@gmail.com </a>..==========THIS IS ALSO GOOD PRACTICE====
+</body>
+</html>                                                      
+ 
+===================================================================
+we need to start header and end header before body
+dont give space to mailme
+=================================================================
+
+Attributes:
+                 DISPLAY
+1.block--take width and height
+2.inline--not take wid and height
+
+1;blocks
+ .headings
+ .paragraphs
+ .divs
+===========
+....tags that need attributes
+1. images(inline)
+ <img src="mypic.jpg"alt="yeelow pic"/>
+src-sourceand atributes have " "
+alt-alternative text
+==================================
+example of one img tag with multiple attributes
+
+<img src="logo.jpg" ............img filename
+     alt="compant logo"..........info for screenreaders brokenlink
+     title="AAA1LLC"........displays on hover
+    class="thumbnail"/>......extra formating(height,width,position..etc)
+attributes:
+class
+id
+style
+accesskey
+tabindex
+============================
+specialentities
+=============
+<  &lt;
+>  &gt;
+c  &copy;
+blankspace  &nbsp;
+&   &amp
+c &cent
+=========================================
+https://www.wpkube.com/html5-cheat-sheet/
+=========================================
+Semantic tags
+=========================================
+header tag is used for nav,title
+it is block tag..it let users know the header
+
+<header>
+<h1>hi</h1>
+</header>
+===================================
+section of page links with other page
+
+<nav>
+<ul>
+<li><a href="sec.html">jeevan</a><li>
+</ul>
+</nav>
+ most of times the nav tag embedded in header tag
+==========================
+============================
+footer: contain info such as copyrights,related doc and links to social media
+.it is at bottom of page
+
+<footer>
+&copy; 2015 by jeeven<br>  !--<br> means line break..!
+<a href="http:fb.com">imtro to fb</a>
+</footer>
+===============================
+figure tag
+==================================
+it include .caption and .multiple multimedia resources
+
+ <figure>
+<img src="jeev.jpg" alt="blue shirt photo">
+<figcaption> one smile keeps your problems away</figcaption>
+</figure>
+
+<other new tags>
+.structural elements--article,aside,main,menuitem,summary,section
+.form elements--datalist,keygen,output
+.input types--color,date,email,list
+.graphic elements--canvas,svg
+.Media elements--audio,embed,source,track,video
+==============================================================================================================================================
+during code the body we have to decide to have execissible code or avg code eccesible code have MAIN,HEADER ,FOOTER
+===============================================================================================================================================
+===============================
+favigons adding images in the title bar .u need to write in head sec
+<link rel="icon" type="keerthy/png" href="
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Font Awesome Demo</title>
+<link rel=
+</head>
+<body>
+<main><p>this is my main code</main>
+<figure>
+<img src="keerthy.png"
+     width="50%" height="100px"
+     alt="white saree">
+<figcaption>good image</figcaption>
+</figure>
+<footer>
+<p> think of more intres &copy; footer</p>
+</footer>
+</body>
+</html>
+==========================================================================================
+how to insert a image in html
+
+<img src="C:\Users\jeevan\Pictures\keerthy (2).png" height="50%" width="50%" alt="onum pic"
+==========================================================================================
+
+=================================================================
+how to display logo in html
+.in head section we declare it by using link and rel and href type attributes
+<link rel="icon" href="C:\Users\jeevan\Downloads\logo.jpg" 
+type="image/x-icon">
+
+<link rel="icon" href="logo.jpg" type="image/x-icon">
+
+=================================================================================
+hyper links
+
+we have <a href=" ">--</a>
+
+<a href="https://usharama.edu.in/">ushararama</a>
+
+the above link have usharama as name when we click on it it goes to urce website.
+
+we have 4 types of links
+
+1 absolute
+2.relative
+3.internal
+4.graphical
+------------------------------------------------------------------------
+                                 opentag             close tag
+1.absolute -                      |              |
+<a href="https://usharama.edu.in/">ushararama</a>
+|                     ||                  |
+opentag           wher to go when click  clickablelink
+
+-----------------------------------------------------------
+2.relative ref
+<a href="index.html">ushararama</a>//local file in same folder
+<a href="docs/index.html">ushararama</a>//link a local file in diff folder 
+a href="#history">ushararama</a>//there is an another loc inside a same file
+
+ relative link links to our created file
+------------------------------------------------------
+
+
+using images as link
+<a href="https://usharama.edu.in/">
+<img src="https://unsplash.com/s/photos/jpg" alt="tiger"/></a>
+
+========================================================================================
+
+video and audio
+
+attributes of video: it use src or embedded<source>
+>height,width
+>autoplay
+>loop
+>controls
+
+attributes of audio:mp3
+.autoplay,controls,loop
+.buffered
+.muted
+.volume
+
+u can set where the vid and aud start and end
+.ext#t=5,25(start 5sec end 25sec
+.ext#t=,1:38:35
+
+<video src="C:\Users\jeevan\OneDrive\Desktop\Documents\Desktop\bluetooth\ke.mp4" width="400" controls loop>
+
+</video>
+
+<audio src="C:\Users\jeevan\OneDrive\Desktop\Documents\Desktop\bluetooth\ke.mp4"
+ controls loop>
+</audio>
+
+===================================================================
+table:
+<table>
+<tr><td>one</td><td>two</td><td>three</td></tr>
+<tr><td>four</td><td>five</td><td>six</td></tr>
+<tr><td>seven</td><td>eitht</td><td>nine</td></tr>
+</table>
+
+o/p:
+=======
+ one	two	three
+four	five	six
+seven	eitht	nine
+
+for table heading we replace td with th
+
+<table>
+<tr><th>one</th><th>two</th><th>three</th></tr>
+<tr><td>four</td><td>five</td><td>six</td></tr>
+<tr><td>seven</td><td>eitht</td><td>nine</td></tr>
+</table>
+
+o/p:
+====
+one	two	three(the first column is bold)
+four	five	six
+seven	eitht	nine
+
+-------------------------------------------
+in ordr to draw border use border attribute
+
+<table border="1">
+
+<table border="1">
+<tr><th>Name</th><th>Age</th></tr>
+<tr><td>jeev</td><td rowspan="2">14</td></tr>
+<tr><td>veej</td></tr>
+</table>
+=============================
+nested tables
+
+<table color="blue">
+<tr><th>runs</th><th>rank</th></tr>
+<tr><td>13k</td><td>#1</td></tr>
+
+
+0/p====
+------------
+name|age    |
+---------   |
+ ajay       |
+ pri   |24
+
+============================================================================
+
+rowspan is the attribute
+
+.<caption> is used to put captions to our tables
+
+--if you put caption outside table the the caption is down and viceversa
+-------------------------------------------------------------------------
+.draw table before coding table
+===================================================
+USEFULL TAGS
+.TO DRAW HORI TAGS WE USE <hr>---------
+.
+<div> used to make divion of content</div>
+
+============
+<addresstag></address>
+The <address> tag defines the contact information for the author/owner of a document or an article.
+.the o/p of address tag is italic
+
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+o/p
+Written by Jon Doe.
+Visit us at:
+Example.com
+Box 564, Disneyland
+USA
+
+==============================================
+blockquote tag:
+used to link the source of quote it include cite attribute
+<blockquote cite="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam">
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization,
+</blockquote>
+====================================
+
+===========================================
+detailstag
+ The <details> tag specifies additional details that the user can open and close on demand.
+<details>
+<summary>keerthysuresh</summary>
+<p>she is beautiful actress</p>
+</details>
+
+o/p
+>Keerthysuresh,,,after user clicks on it we got shie is beautiful
+
+===========================================================
+--------------Inline------
+cite tag
+The <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+
+Note: A person's name is not the title of a work.
+
+The text in the <cite> element usually renders in italic.
+
+<p><cite>myname</cite>hi</p>
+
+o/p:
+my name in italichi is normal
+======================================
+abbreviation tag
+
+The <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+<p>the <abbr title="World Health Organization">WHO</abbr>found in 1948</p>
+
+o/p 
+
+WHO  when we point on who it show fullform
+
+===========================================
+<time>tag
+The <time> tag defines a specific time (or datetime).
+
+The datetime attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results.
+<p>open frm <time>10:00</time> to <time>1.00</time>ok;</p>
+
+<p>i have date on <time datetime="2022-11-30 12:00">my birthday</time></p>
+
+o/p
+open from 10:00 to 1:00
+i have date on my birthday(hide time and date)
+====================================================
+<code>tag
+
+used to display piece of computr code
+
+<p>the <code>button</code> is define clickable button</p>
+=========================================================
+
+sub script and sup script tag
+<p>H<subscript>2</subscript>o</p>
+
+<p>(a+b)<supscript>2</supscript></p>
+=================================
+button tags
+The <button> tag defines a clickable button.
+
+Inside a <button> element you can put text (and tags like <i>, <b>, <strong>, <br>, <img>, etc.). That is not possible with a button created with the <input> element!
+
+<button type="button" onclick="alert('hellousers')">press enter!</button>
+
+<button type="button" onclick="alert('hi!')">click</button>
+
+o/p
+
+this page says hi
+=================================================
+label tag
+The <meter> tag defines a scalar measurement within a known range, or a fractional value. This is also known as a gauge.
+
+Examples: Disk usage, the relevance of a query result, etc.
+
+Note: The <meter> tag should not be used to indicate progress (as in a progress bar). For progress bars, use the <progress> tag.
+
+Tip: Always add the <label> tag for best accessibility practices!
+
+<label for="students">avg</label>
+<meter id="students" min="0" max="100"
+value="50">50%</meter>
+
+======================================
+progress
+The <progress> tag represents the completion progress of a task.
+
+Tip: Always add the <label> tag for best accessibility practices!
+<label for="movie">downloadingpercent</label>
+<progress id="file"  min="10" max="100" value="10">10%</progress>
+===================================================================
+ iframe tag
+<iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials" width=" 100"   height="200 ">
+</iframe>
+
+========================================
+bdo tag
+used to convert left to right
+and viseversa
+
+<p><bdo dir="rtl">hi people</bdo></p>Let’s begin the adventure
+Enter your emaile.g. monalisa@github.com
+kumarpothana10@gmail.com
+Create a password
+Pothana@123
+Enter a username
+designingpages
+===================================================
+udemy
+============================
+<meta name="description" content="page description is here"/>.............it is used before open the website
+
+============
+taking user i/p
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>udemyclass</title>
+</head>
+<body>
+<h1>my user i/p text</h1>
+<br>
+Enter Name:<input type="text">
+</body>
+</html>
+
+o/p:
+my user i/p text
+enter name: 
+
+==================== 
+to put coulour to entire text we use <style tag
+<style type="text/css">
+body{
+colour:blue;
+}
+</style>
+
+o/p
+all o/p appears blue
+
+===================
+if we want to add space in same line then we use
+&nbsp;
+<p>helo&nbsp; 
+===================================
+underline text
+<u>
+
+strike text 
+<strike>
+
+<p><strong>hello</strong><br><em>jeevan</em><br><u>how r u?</u><br><strike>f***</strike></p>
+<p>put bold italic and underline for same word</p><br>
+<p><u><em><strong>like share</u></em></strong></p>
+
+ ============================================
+in line text formating
+
+<h6><font face="arial" colour="pink" size="20"> mypahe</font></h6>
+===================================
+how to autoplay in video
+
+ loop muted autoplay="autoplay">
+or
+ loop autoplay muted
+
+===============================
+to link a link to image
+
+<a href="https://www.facebook.com/"><img src="C:\Users\jeevan\Downloads\kalam.jpg" width="50%" 
+height="50%" alt="pic"></a>
+
+===============================
+html anchor tags
+used to link the links in same page line article1 in same page 
+
+<ul type="diso">
+<li><a href="#top1">article 1</a></li>
+<li><a href="#top2">article 2</a></li>
+<li><a href="#top3">article 3</a></li>
+</ul>
+<p><h6><a id="top1">article 1</h6>
+hi
+</p>
+<hr>
+<p><h6><a id="top2">article 2</h6>
+hi all
+</p>
+<hr>
+<p><h6><a id="top3">article 3</h6>
+hi all worlds
+</p>
+<hr>
+
+
+o/p
+when we click on article 1 it move to article 1
+=====================================================
+NESTED TABLE-----------------
+
+<table border="1" colour="red">
+<tr><th>name</th><th>age</th></tr>
+<tr><td>
+
+<table border="1" color="green" width="100%" cellspacing="2" cellpadding="2">
+<tr><th>sport</th><th>response</th>
+</tr>
+<tr><td>cric</td><td>100</td></tr>
+<tr><td>badmin</td><td>50</td</tr>
+<tr><td>kabadi</td><td>40</td</tr>
+</table>
+
+</td></tr>
+</table>
+======================
+merge tables
+===========
+
+<table border="1" color="green" width="100%" cellspacing="2" cellpadding="2">
+<tr><th colspan="2">sport</th></tr>
+</tr>
+<tr><td>cric</td><td>100</td></tr>
+<tr><td>badmin</td><td>50</td</tr>
+<tr><td>kabadi</td><td>40</td</tr>
+</table>
+
+==========================
+text wrapping --here we are going to add nowrap to make text in single line
+===================================
+
+<table border="1" color="green" width="100%" cellspacing="2" cellpadding="2">
+<tr><th colspan="2" nowrap>the top 3 is ravi When the project was started in 2001, all text in Wikipedia was covered by the GNU Free Documentation License (GFDL), a copyleft license permitting the redistribution, creation of derivative works, and commercial use of content while authors retain copyright of their work.[275] The GFDL was created for software manuals that come with free software programs licensed under the GPL. This made it a poor choice for a general reference work: for example, the GFDL requires the reprints of materials from Wikipedia to come with a full copy of the GFDL text. In December 2002, the Creative Commons license was released: it was specifically designed for creative works in general, not just for software manuals. The license gained popularity among bloggers and others distributing creative works on the Web. The Wikipedia project sought the switch to the Creative Commons.[276] Because the two licenses, GFDL and Creative Commons, were incompatible, in November 2008, following the request of the project, the Free Software Foundation (FSF) released a new version of the GFDL designed specifically to allow Wikipedia to relicense its content to CC BY-SA by August 1, 2009. (A new version of the GFDL automatically covers Wikipedia contents.) In April 2009, Wikipedia and its sister projects held a community-wide referendum which decided the switch in June 2009.[277][278][279][280]
+
+The handling of media files (e.g. image files) varies across language editions. Some language editions, such as the English Wikipedia, include non-free image files under fair use doctrine, while the others have opted not to, in part because of the lack of fair use doctrines in their home countries (e.g. in Japanese copyright law). Media files covered by free content licenses (e.g. Creative Commons' CC BY-SA) are shared across language editions via Wikimedia Commons repository, a project operated by the Wikimedia Foundation. Wikipedia's accommodation of varying international copyright laws regarding images has led some to observe that its photographic coverage of topics lags behind the quality of the encyclopedic text.[281]
+
+The Wikimedia Foundation is not a licensor of content, but merely a hosting service for the contributors (and licensors) of the Wikipedia. This position has been successfully defended in court.[282][283]
+</th></tr>
+</tr>
+<tr><td>cric</td><td>100</td></tr>
+<tr><td>badmin</td><td>50</td</tr>
+<tr><td>kabadi</td><td>40</td</tr>
+</table>
+
+
+===================================================
+how to insert background image on table
+
+<table border="1" bordercolor="blue" cellspacing="2" cellpadding="2" background="C:\Users\jeevan\Downloads\kalam.jpg">
+<tr><th>month</th><th>savings</th><th>save for holiday</th></tr>
+<tr><td>jan</td><td>100$</td><td rowspan="2">$100</td></tr>
+<tr><td>feb</td><td>80$</td></tr>
+</table>
+
+o/p image is applied to whole table
+
+===========
+<table border="1" bordercolor="blue" cellspacing="2" cellpadding="2" >
+<tr background="C:\Users\jeevan\Downloads\kalam.jpg"><th>month</th><th>savings</th><th>save for holiday</th></tr>
+<tr><td>jan</td><td>100$</td><td rowspan="2">$100</td></tr>
+<tr><td>feb</td><td>80$</td></tr>
+</table>
+
+0/p background applied to rows only
+
+
+=========================================
+
+cell alignment
+
+
+align right and left and center
+
+<table border="1" bordercolor="blue" cellspacing="2" cellpadding="2">
+<tr><th>month</th><th>savings</th><th>save for holiday</th></tr>
+<tr><td>jan</td><td align="right">100$</td><td rowspan="2">$100</td></tr>
+<tr><td>feb</td><td>80$</td></tr>
+</table>
+================================================================
+forms
+
+it has form tag,it is good to name form
+
+..we have to types of data to transmit data b/w client and server
+1.post 2.get
+ 
+=======================================================
+<form name="employment" action="send.php" method="post">
+<table>
+
+so we are goimg to enter name and use i/p 
+
+and in order to restrict length of name we use attribute 
+-------------------
+maxlength="50" 
+-----------------------------
+select menus
+================
+some times while we apply job we have several jobs so we need to select one so we use
+<select name="position">
+<option value="te">techer</option>
+<option value="pr">programmer</option>    ..//since database can store only two var so we gave 2 letters
+
+</select>
+
+=====================
+check boxes
+---------
+sometimes user need to put tick on option like full time parttime
+<input type="checkbox" name="ft"/>full
+<input type="checkbox" name="ft"/>fullnight
+<input type="checkbox" name="ft"/>halffull
+</td>
+=======
+check box used to select the multiple optins
+======================
+radio buttons
+ used to select one option
+<input type="radio" name="ourwish: value="employed"/>employed
+---------------
+for check box we gave name that is diff from other and for radio we gave same name
+
+=========================================
+text area--used to put additional text
+
+<textarea name="comment> cols="45" rows="5"></textarea>
+
+==================
+submit and reset
+
+<input type="submit" name="submit" value="Submit" />
+<input type="reset" name="reset" value="Reset" />
+==============================================================
+3 pgms of forms
+====================================================
+<form name="employment" action="send.php" method="post">
+
+<table border="1" width="600" cellspacing="2" cellpadding="2">
+<tr>
+<td>Employment Application</td>
+<td></td>
+</tr>
+<tr>
+<td>First Name</td>
+<td><input type="text" name="fname" maxlength="50" /></td>
+</tr>
+<tr>
+<td>Last Name </td>
+<td><input type="text" name="lname" maxlength="50" /></td>
+</tr>
+<tr>
+<td>positon</td>
+<td>
+<select name="position">
+<option>Accountant</option>
+<option>Receptionist</option>
+<option>Administrator</option>
+<option>supervisor</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Experience Level</td>
+<td>
+<select value="Experience">
+<option value="En">Entry level</option>
+<option value="so">Some experience</option>
+<option value="ve">Very Experience</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Job Type</td>
+<td><input type="checkbox" name="ft"/>full-time
+<input type="checkbox" name ="pt"/>part-time
+<input type="checkbox" name ="ct"/>contract
+</td>
+</tr>
+<tr>
+<td>Employement status</td>
+<td><input type="radio" name="estatus" value="employed"/>employed
+<input type="radio" name="estatus" value="Unemployed"/>Unemployed
+<input type="radio" name="estatus" value="student"/>student
+
+<input type="radio" name="ra" value="Definitely"/>Definitely
+<input type="radio" name="ra" value="may be"/>Maybe<br>
+<input type="radio" name="ra" value="Not sure"/>Not sure
+
+</td>
+</tr>
+<tr>
+<td>Additional comment</td>
+<td>
+<textarea name="comments" cols="45" rows="5"></textarea>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="submit" name="submit" value="Submit" />
+<input type="reset" name="reset" value="Reset" />
+
+</td>
+</tr>
+</table>
+</form>
+<p>============================================================================================</p>
+<h1>form2</h1>
+<form name="normal form">
+<table color="red">
+<tr><td>Name:</td>
+<td><input type="text" placeholder="Name" name="fname" maxlength="50"/></td>
+</tr>
+<tr><td>Password:</td>
+<td><input type="password" placeholder="password" maxlength="10" name="pass"/></td>
+</tr>
+<tr><td>Gender</td>
+<td>
+<input type="radio" name="radio" value="box"/>Male
+<input type="radio" name="radio" value="box"/>Female
+<input type="radio" name="radio" value="box"/>others
+
+</td>
+</tr>
+<tr><td>Email:&nbsp</td>
+<td><input type="text" name="email" placeholder="Email" maxlength="50"/></td>
+</tr>
+<tr><td>Phone:</td>
+<td>
+<select value="977">
+<option value="+9">+91</option>
+<option value="+2">+234</option>
+</select>
+<input type="phone" placeholder="phone" name="number" maxlength="20"/>
+</td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="Submit"/></td>
+<td><input type="reset" value="Reset"/></td>
+</table>
+<p>==============================================================================================================</p>
+<h1 color="red">form-3</h1>
+<form name="details form">
+<input type="text" placeholder="Enter name"/><br><br>
+<input type="email" placeholder="Enter Email"/><br><br>
+<input type="password" placeholder="Enter password"/><br><br>
+<input type="phone" placeholder="enter phone"><br><br>
+<input type="url" placeholder="enter url"/><br><br>
+<input type="search" placeholder="search"/><br><br>
+pick a color:<input type="color"/><br><br>
+pick a date:<input type="date"/><br><br>
+pick a file:<input type="file"/><br><br>
+pick a number:<input type="number" min="1" max="100"><br><br>
+pick a range<input type="range"><br><br>
+<input type="time"><br><br>
+<input type="checkbox" name="cr">cricket<br><br>
+<input type="checkbox" name="ba">badminton<br><br>
+<input type="radio" name="gender">male<br><br>
+<input type="radio" name="gender">female<br><br>
+<input type="reset">
+<input type="submit">
+</html>
+=========================================================
+framset: used to devide an html into multiple blocks
+used to load/call/include a file without reload/refresh of current page
+
+========================================================================
+in order to put all center we use <tr align =center> by this we neglect using img align
+==========================================================================
+in order to put progress name up then we use 
+<label for="lang"><font color="white">C</font><br></label>
+<progress id="lang" min="0" max="100" value="50">80%</progress>
+
+
+
+
+
+========================================================================================================================================================================================================================
+
+========================================================================================================================================================================================================================
+
+
+
+CSS BASICS
+
+=====================================================================================================================================================================================
+
+------------------------------------------------------------------------------------
+====================================================================
+comment: used to read by reader it does not do anything to our code
+ 
+ex:
+/*this is css comment*/
+==================================================================
+
+declaration block:
+
+b/w the opening and closing braces everything is declaration block
+
+ex:body {
+  font-family: Arial, sans-serif; /* starts with this line */
+  color: #555;
+  font-size: 14px;
+  line-height: 20px; /* ends here, before the closing curly brace */
+}
+========================================================
+
+property:
+
+A property is what appears before the colon in any line of css
+
+ex: #box{
+       width: 200px;/* the property here is (width)*/
+        }
+============================================================
+
+value: occurs immediately after colon
+
+in the above ex 200px is the value
+==============================================
+
+selector:
+it is a instruction in a css rule set that tells the browser what elements to select for styling,,,
+
+ex:
+.box {
+  background-color: red;
+}
+
+form textarea {
+  background-color: blue;
+}
+
+.box and form textarea are selectors here
+====================================================
+Types of SELECTORS
+====================================================
+1 UNIVERSAL SELECTOR
+
+this selector consists of asterisk char ,when used * it selects every elements on the page
+
+ex:
+* {
+  background-color: red;
+}
+===================================================
+2.element type selector
+
+An element type selector is a selector that targets an element by the tag name. 
+
+/* matches an HTML element by name */
+nav {
+  font-family: Arial, sans-serif;
+  color: #555;
+  font-size: 14px;
+}
+=================================================
+class selector
+
+/* matches HTML element with class="navigation" */
+.navigation {
+  width: 960px;
+  margin: 0 auto;
+}
+=======================================
+id selector
+
+/* matches HTML element with id="navigation" */
+#navigation {
+  width: 960px;
+  margin: 0 auto;
+}
+=============================================
+attribue selector
+==============================================
+
+css syntax:
+
+selector{
+property:value;
+}
+
+
+.selector is just fancy way of saying what it is you want to style
+ex:h1,para
+
+property: color,bg
+
+value:which color
+
+h1{
+color:blue;
+}
+
+so it makes our heading blue;
+===========================================================
+it you want to give multiple properties then that is also possible
+
+h1{
+color:blue;
+background-color:yellow;
+}
+=============================================
+internal type stylesheet:
+
+...styling within the <head>
+...Rules are define within <style>
+
+<head>
+<meta charset="UTF-8">
+<title>css</title>
+<style>
+h1{
+color:green;
+background-color:red;
+}
+</style>
+</head>
+<body>
+<h1>My first css</h1>
+
+======================================================
+External style sheet
+----
+used when we need to connect multiple pages
+----
+.You put your rules in diff file
+
+.youre gonna save it something such as mystyle.css file extension
+
+<link rel="stylesheet" href="mystyle.css">
+
+================================================================
+the rule precedence:
+
+h1{
+color:blue;
+}
+h1{
+color:black;
+}
+
+so in this code it selects only 2nd declared that is back..so it selects recently created file
+=============================================================
+
+if u want to overcome rule precedence then use IMPORTANT! attribute
+
+h1{
+color:blue; !important;
+}
+h1{
+color:black;
+}
+
+so here it selects blue(important is kept here) no matter how many files u created
+==================================================================
+ 
+
+======================================================================
+color convemtions
+
+1 Hexadecimal......
+#0000FF--RED
+#FF0000--BLUE
+#FFFF00--YELLOW
+
+2 RGB
+rgb(0,0,1)---blue
+ 
+if we want to make blue more blue then we use rgba ..a means alpha transparecy
+
+rgba(0,0,0,.5)---dark blue
+=====================================================
+use contrast checker
+=====================================================================
+
+FONT FAMILY
+
+IT is used for styling text
+ex:
+h1{
+font-family:Arial;
+}
+
+----------------
+every single browser doesnt support every tag in this case we use alternatives
+
+h1{
+font-family:Courier,Impact,Arial;
+}
+
+if u have coruier use it or goto impact if not there then go to arial
+==================================================================
+in font familt we have two type of fonts
+.sans-serief
+.serief fonts
+
+serief fonts:they have fancy edges like caligraphy..but avoid these
+--------------
+sansserif: these fonts are clean and professional
+
+=============================================================
+custom fonts:
+if u want to use fonts that were created by u then we use this
+
+@font-face{
+font-family:myspecialfont;
+src:url('cofeen.tff');
+}
+
+once u use this then we can use myspecialfont always
+
+h1{
+font-family:myspecialfont;
+=========================================================================================================================================================================================================================================================================================================
+
+CSS SYNTAX:
+
+IT consists of selector,property and a value...
+
+selector is element...
+
+so in this let us say we want to apply background color to our body then we use
+<style>
+body{
+background-color:pink;
+}
+</style>
+
+we will keep this in head part ;;;;and we can also use multiple values like
+body{
+background-color:pink;
+color:blue;
+font-family:Impact;
+}
+</style>
+=====================================================
+if u want to use diffent colors to heading then 
+<style>
+body{
+background-color:pink;
+}
+h1{
+color:green;
+}
+</style>
+===================
+selctors can also be combined lets say that we need to select 3 diif headings then we choose this like
+<style>
+body{
+background-color:pink;
+}
+h1{
+color:green;
+}
+h2,h3{
+color:white;
+}
+</style>
+=========================================================================
+
+TYPES OF CSS STYLES:
+Internal
+inline
+External
+----------------------------------------------------------------
+
+internal style sheet:
+---------------------
+the style sheet contained in same html doc like previous ex..here we definr style in head
+===================================
+external style sheet:
+-------------------------------
+we place style rules in a css file..and linking it.
+
+body{
+background-color:pink;
+color:blue;
+font-family:Impact;
+}
+
+h1{
+color:green;
+font-family:Arial;
+}
+h2,h3{
+color:white;
+font-family:30;
+}
+
+without style tag we use this directly
+==================================================================================
+Inline css:
+------------
+we can add style rules directly to the element
+
+<p style="color:orange; font-family:Impact;">This two part series provides a detailed overview of the fundamentals of coding using CSS and JavaScript. Students will learn how to create responsive web pages using project based learning. The CSS section explores almost every aspect of CSS development. This includes:</p>
+
+this is directly used in body
+
+using inline rules is not good method because it increases code length
+=====================================================================
+
+color names and codes:
+====================================================================
+we can set colrs by using hexadecimal,rgb colors
+h1{
+color:red;
+}
+/*display red using color*\
+-------------------------------
+h2{
+color:#32a8a4;
+}
+/*display using hex decimal*/
+----------------------------
+h1{
+color:rgb(168, 50, 50);
+}
+/*display color using rgb*\
+
+============
+we can pick hexa and rgb value using COLORPICKER.COM
+=====================================================================
+class and spans
+
+class is used to apply diff styles to elements
+every class is have a class name,class name can be any thing
+-------------------------------------
+.boldtext{
+font-size:30;
+color:blue;
+font-family:Impact;
+}
+
+.largetext{
+font-size:large;
+color:rgb(256,0,256);
+font-weight:italic;
+}
+.underline{
+font-decoration:strikethrough;
+color:#0000FF;
+}
+
+=============
+now i can use this class to design tables or paras etc
+ex
+<p class="boldtext">hello my name is jeevan</p>
+=========this produce output of boldtext;
+
+----if i want to highlight the jeevan using second class then we will just highlight using span
+===============================
+<p class="boldtext">hello my name is <span class="underline">jeevan</s</p>
+===============by using span class we can get use second class==========
+======================================================================
+if i want to use all classes then i will decla
+
+
+<p class="boldtext">hello my name is <span class="underline largetext">jeevan</s</p>
+
+=====================================================================================================================================
+
+divsion tag
+=====
+used to replace tables
+<div>hi hello world</div>
+-------------
+here it is a line of text in a single table cell...it contain single row and coloumn equal to one cell
+========================================================================================================================================
+css id
+=========================================================
+id are similar to classes but diff is once the id is used it cannot be used in same html files.....
+
+so we use 
+#div1{
+width:80%;
+background-color:red;
+color:green;
+border:3px solidblack;
+}
+
+we can use div1 or somethingelse as name;
+
+<div id="div1">hi love</div>
+==================================
+not only we apply id to div we can also apply class to div
+
+#div1{
+width:80%;
+background-color:red;
+color:green;
+border:3px solidblack;
+}
+.underline{
+text-decoration=underline;
+}
+
+
+<div id="div1" class="underline">hi love</div>
+
+============================================================================================
+Margins:
+
+ in div we add
+#div1{
+width:80%;
+background-color:red;
+color:green;
+border:3px solidblack;
+margin:30px;
+}
+
+
+let us say we want to apply margin at bootom left then 
+margin:top,right,bottom,left;
+
+#div1{
+width:80%;
+background-color:red;
+color:green;
+border:3px solidblack;
+margin:0px opx 10px 30px;
+}
+
+============================================================
+padding:used to add space
+
+#div1{
+width:80%;
+background-color:red;
+color:green;
+border:3px solidblack;
+margin:0px opx 10px 30px;
+padding:10px;
+}
+
+we can add padd to left and right only
+
+#div1{
+width:80%;
+background-color:red;
+color:green;
+border:3px solidblack;
+margin:0px opx 10px 30px;
+padding:0px 30px 0px 40px;
+}
+====================================
+css text properties:
+-------------------------
+.textcolor{
+color:red;
+color:#0000FF;
+color:rgb(2,0,8);
+}
+ it produces ie add color to paras
+-----------------------------------------
+letter-spacing
+
+.textspace{
+letter-spacing:10px;
+}
+ i t  i  s   u s e d t o p r o d u c e s p a c e s b/w  letters
+
+--------------------------
+wordspace:
+
+used to give soacing b/w words
+.wordspace{
+word-spacing:10px;
+}
+--------------
+textalign
+
+used to move text to left or right
+
+.textalign{
+text-align:center;
+}
+--------------------------------------
+textdecoration(underline overline linethrough)
+.textdec{
+text-decoration:overline;
+
+------------------------------------
+texttransform(uppercase,lowercase,capitalize)
+.te{
+text-transform:capitalize;
+}
+
+used to start with capital letter for every word
+-----===================================================-------------==========================
+font properties:
+-----------
+.textstyle{
+font-family:verdana,sans-serif;
+font-size:xx-large,x-large,larger,largemedium,small,smaller,x-small,xx-small,length,%;
+font-style:italic,oblique,normal;
+line-height:200%;
+}
+---line hight used to incresa or decrease space after each line(110-120)--
+=============================================================
+borders
+
+border values:
+--------
+border(default all around)
+border-top
+border-bottom
+border-left
+border-right
+
+.myborder{
+border:4px;
+bordor-color:pink;
+border-style:dashed,dotted,double,groove,hidden,inset,none,outset,ridge,solid
+====================================================================================
+
+backgrounds:
+#div2{
+width:100%;
+border:5px solid black;
+height:400px;
+background-color:yellow;
+}
+-------used to put background color-------------
+if u want to put backgroung image then we will replace background color with background img
+------------------------------------------------
+background-image:url(logo.jpg)
+----------------------------------\\\
+if u want to repeat background only horizontal(i.e x axis)then use
+background-repeat:repeat-x;
+-----------------------------------------------
+if u dont want to repeat backgrond then use
+background-repeat:no-repeat;
+----------------------------------------------
+if u want to adjust img position without repeating then
+
+background-position:center,topleft,topcenter,topright,cnterleft,centerright,bottomleft,bottomcenter,bottomright,x-% y-%,xpos ypos;
+===============================================================================
+
+tranparency:
+----------
+in order to reduce or increase brightness of image we use opacity
+
+first add img using img tag in body;
+
+now in head add style
+img{
+opacity:0.9;
+}
+
+now add hover so that when mouse pointer is on img it looks bright and when it away then it shattered
+img:hover{
+opacity:1.0;
+}
+========================================================================================================================================================
+width and height properties:
+-------------------
+min-width:600px;
+
+if we put min width 600 it does not go below the value;
+max-width:900px;
+-------------------------------------------
+width:auto;
+
+occupies full width
+--------------------------------------------
+in order to get 100% height we use vh
+
+height:100vh;
+===============================================================================================================================================================================================================
+how to add text on top of images?
+------------
+for this we use two div known as nested div
+---------------
+nested div is knoe=wn as container
+                         ----------
+so for this first of all i will create a background id
+
+#background{
+background-image:url(text.jpg);
+padding:30px;
+}
+now i will create text box
+#textbox{
+width:auto;
+height:100px;
+background-color:black;
+}
+now for text i will create class
+.text{
+color:white;
+}
+
+now in body
+<div id="background">
+  <div id="textbox">
+    <div class="text">ggddjheudyetfdegjdehgde
+    </div>
+  </div>
+</div>
+===============in this way we use nested div============================
+
+=============================================================
+for inline elements like span we are going to use 
+display:block;......//display as a single div for multiple div
+display:inline-block;//used to split the box ie div
+------------
+display:none;
+====================================
+float:
+left
+right
+both 
+
+used to move left right
+=============================
+clear:
+rifht
+left
+both  ussed to clesar
+=======================================================================
+Element overflow: when you set a height/width and the content doesnt fit then we use overflow
+.visible
+.hidden
+scroll
+auto
+                      
+as we resize it the content is coming out of box 
+
+so now i use scroll or hidden or visible to come out of it
+
+or we can use display:table cell;
+
+=================================================================
+margin means additional space out side the border.
+
+positive marfin:move top/bootom
+-ve:move .ef/right
+
+--------------------------------------------------------
+padding means add space blw element to border 
+
+positive pad: border moves out word from element
+---------------------------------------------------
+div{
+width:100px;
+height:50px;
+padding:10px;
+margin:5px;
+border: 1px solod black;
+}
+
+actual width=margin+border+padd+actualelamenwidth
+act hei=elehei+topand bottom padd+top and bottom marg+top and bot border
+
+width=132
+height=82
+==========================================================
+by default sections are block;
+----------------
+how to add little space blw elements by using margins
+
+-------------------------
+if we dont want things to float then use clear:both;
+-----------------------
+==================================================================
+
+
+a:active must come after a:hover
+-----------------------------------------
+a:hover{
+background:green;
+color:red;
+}
+//it is used to change color when mouse is placed on the letter
+-------------------------------------
+a:focus{
+background-color:violet;
+color:red;
+}//used to change color when tapped
+-----------------------------
+a:active{
+border:10px black;
+}//used to add border when clicks;
+-----------------------
+list styling
+
+links style:
+a:hover must come after a:link and a:visited
+ul{
+list-style-type:square;
+}
+//used to put square in ul
+=====
+ol{
+list-style-type:upper-roman;
+}//used to put roman numbers in ol
+====
+we can also put images as points
+ul,ol{
+list-style-image:url("logo.jpg");
+}
+================================================
+claass vs id
+syntax . #
+----------
+classes used multiple times
+id-unique
+--------
+nav a{
+}//a is child to nav
+======================================================================================
+attribute selectors
+
+if we have .gov .edu and .org differnt extensions we can style them using
+a[href$=" .org"] {
+background:green;
+}//used to appear green
+=======================================================================================================
+=
+COMMON SELECTORS
+===================================
+type selector-identify element based on its type 
+
+ex:
+h1{
+---
+}
+------------
+class selector:identifies based on its class attribute value
+
+ex:
+.tag{
+---
+}
+==========
+id selector: identifies based on its id attribute value
+
+ex:
+#div{
+---
+}
+=============================================================================
+css                            Html                                          
+----                        <section id="intro">
+                            <h1>...</h1>                                      
+                     <h2 class="tagline">...</h2>
+                         </section>
+h1 {...}
+.tagline {...}
+#intro {...}
+=============================================================================
+CHILD SELECTORS:
+
+Decendent selector:
+
+<nav>
+<a href="">hi</a>
+</nav>
+
+nav a{
+background:black;
+}
+//here nav a is descend selector, only select a elements that fall inside of an nav
+---------------------------------------------------------------------------------------------------
+
+Direct child selector:
+
+when ever we have multiple elements ab=nd we need to select the one element example
+
+<div>
+<h2>hi</h2>
+<p>hiy</p>
+<ul>
+<li>hi</li>
+</ul>
+
+---if we need to select the h2 only then use direct select
+
+div>h2{
+color:black;
+}
+
+-------------------------------------=======================
+==========================================
+sibbling selector:
+
+general sibbling selector:
+
+separates two selectors and matches all iterations of the second element, that are following the first element (though not necessarily immediately), and are children of the same parent element.
+
+.syntax:
+former_element ~ target_element { style properties }
+----------------
+p ~ span {
+  color: red;
+}
+
+<p>hi</p>
+<span>hello</span>//red
+<h1>hi</hi>
+<p>hel</p>
+<h3>helo</h3>
+<span>hi</span>//red
+
+the o/p heer is .....the element span that come immediately or followed by some other element is appeared red
+
+ex-2:
+div ~ p{
+color:green;
+}
+
+<div>
+<p>hi1</p>
+<div>hi</div>
+<p>hrl</p>//green
+</div>
+
+note:it must have the same parent
+=======================================================================================================================================
+||                                                                                                                                    ||
+||
+Adjacent sibbling select:
+
+The adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.
+
+syntax:
+
+former_element +target_element { style properties }
+
+
+div+h1{
+color:blue;
+}
+
+<div>
+<h1>hi</h1>
+<div>hil</div>
+<h1>not</h1>..red
+</div>
+
+Note:it is similar to general sibbling but diff is it immediately follows the first element:
+
+==========================================================================================================================================
+
+Attribute selectors:
+
+============================================================
+css attribute selector:
+
+a[target]{
+background:red;
+}
+
+<a href="www.hi.com" target="">hi</a>//the output here is hi red
+<a href="www.hi.com" target="">hi</a>//no change in bg;;
+--------------------
+css[attribute="value"] selector:
+
+a[target="blank"]{
+background:blue;
+}
+
+<a href="www.hi.com" target="blank">hi</a>//output is blue;because the attribute value is specified and used 
+
+<a href="www.hi.com" target="sec">hi</a>//no out put here
+
+-----------------------------
+
+[attribute~="value"]{  }
+
+[title~="flower"]{
+border:yellow;
+}
+
+<a href="www.hi.com" target="red flower">hi</a>//output is yellow border;because the attribute value is specified and used 
+
+<a href="www.hi.com" target="red">hi</a>//no out put here
+
+--------------------------------
+
+CSS [attribute|="value"] Selector
+
+ex:
+
+[class|="top"]{
+color:red;
+}
+
+
+<h1 class="top-te">hi</h1>//o/p red
+<h1 class="top">hi</h1>//no o/p
+
+-------------------------------------------------------
+CSS [attribute^="value"] Selector
+
+[class^="top"]{
+color:red;
+}
+
+
+<h1 class="top-te">hi</h1>//o/p red
+<h1 class="top">hi</h1>//o/p  red
+
+it is similar to previous but here if value is included it applied but there value must folloed by hypen
+
+-------------------------------------------------------------
+
+CSS [attribute$="value"] Selector
+
+[attribute$=value]	a[href$=".pdf"]	Selects every <a> element whose href attribute value ends with ".pdf"
+--------------------------------------------------------------
+
+CSS [attribute*="value"] Selector
+--------------------------------------------------------
+=====================================================================================================
+
+                     PSEUDO CLASSES
+
+===================================================================================================================
+
+A pseudo-class is used to define a special state of an element.
+
+Syntax:
+
+selector:pseudo-class {
+  property: value;
+}
+
+
+/* unvisited link */
+a:link {
+  color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+
+--------------------
+pseudo classes in class
+
+a.high:hover{
+color:red;
+}
+
+<p><a class="high" href="www.web">hi</a></p>    //the color is red
+------------------------------------------------------------------------
+
+using hover in div
+
+div{
+color:red;
+background:blue;
+}
+
+div:hover{
+color:green;
+}
+
+
+<div>Mouse Over Me</div>
+//when mouse kept on it will appear blue
+---------------------------------
+simple tool tip hover:
+p{
+color:red;
+}
+
+div:hover p{
+display:block;
+}
+
+
+<div>hi
+<p>hello</p>
+</div>//when i hover on hi it say hello
+----------------------------------------------------
+first-child:
+The :first-child pseudo-class matches a specified element that is the first child of another element.
+
+p:first-child{
+color:blue;
+}
+
+
+<p>This is some text.</p>//blue
+<p>This is some text.</p>
+
+<div>
+  <p>This is some text.</p>//blue  beacuse it is first child of parent div
+  <p>This is some text.</p>
+</div>
+
+-------------------------------------------------------------
+===================================================================================\
+pseudo element:                                                                    ||
+                                                                                   ||
+=====================================================================================
+A CSS pseudo-element is used to style specified parts of an element.
+
+selector::pseudo-element {
+  property: value;
+}
+--------------------------------------------------------------------------------------
+the first line pseudo elements
+
+p::first-line{
+color:blue;
+}
+
+<p>hi thiru</p>//blue beacause it is first line
+
+<p>hi thiru</p>
+
+
+------------------------------------------------
+the first letter pseudo elements
+
+p::first-letter{
+color:blue;
+}
+
+<p>hi thiru</p>//h is blue,beacause it is first letter
+
+<p>hi thiru</p>
+
+---------------------------------------------
+
+Pseudo-elements can be combined with HTML classes: 
+
+p.high::first-letter{
+color:blue;
+}
+
+<p class="high">hell no</p>//h is highlighted
+---------------------------------------------------------
+multiple pseudo elements:
+
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+font-type:italic;
+}
+
+p::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+
+<p>hi hihdcdygft;osidh;cdhyfueupi;olfk/fefg'k"Vv'hruv'rlvhfvy8o9'ikjvndvdycduiue;dkm,nskjd</p>
+
+//here the output is that h is blue and remaining line is green
+----------------------------------------------------------------------------------
+before and after pseudo element:
+
+used to add content before or after
+
+h1::before{
+content:url(smiley.gif);
+}
+
+<h1>tect</h1>
+
+it add smile before h1
+
+-----------------------------------------------------------------
+marker:used to marks the list items
+
+::marker {
+  color: red;
+  font-size: 23px;
+}
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+-----------------------------------------------------------
+selection pseudo element
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+::selection {
+  color: red;
+  background: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Select some text on this page:</h1>
+
+<p>This is a paragraph.</p>
+<div>This is some text in a div element.</div>
+
+</body>
+</html>
+
+// when ever we try to copy it used to appear yellow
+-----------------------------------------------------------------
+The ::selection pseudo-element matches the portion of an element that is selected by a user.
+---------------------------------------
+===============================================================================================================================================================================================
+css linear gradients
+
+Syntax:
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+===============================================================================================================================================================================================
+#grad{
+background-color:red;
+background-image:linear-gradient(red,yellow);
+}
+
+--------------------------
+#grad{
+background-color:red;
+background-image:linear-gradient(to right,red,yellow);
+}//bg applied at right(to left,to bottom right----)
+---------------------------------------------------------------------------------------------
+gradient using angles
+
+syntax:
+background-image: linear-gradient(angle, color-stop1, color-stop2);
+---------------------------------------------------------------------------------------------
+
+#grad {
+  background-image: linear-gradient(180deg, red, yellow);
+}(o,90,180,-90)
+
+----------------------------------------
+using multiple colours
+
+#grad {
+  background-image: linear-gradient(red, yellow, green);
+}
+
+#grad {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}//produce multi colors
+-------------------------------------------------
+
+using transperency
+
+for this we use rgba
+a=0--indicates full trans
+a=1--indicates ful color(no trans)
+----------------------------------
+repeating linear grad
+
+#grad {
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+-----------------------------------------
+======================================
+
+select multiple selectors;
+
+h1,p{
+color:red;
+}
+
+selectsa,eselectors
+h1+h1{
+color:red;
+}
+
+=========================================================
+infosys html and css
+
+===================================================
+--- block elements :this elements take entire space in web page(h,p ,div etc)
+these elements starts on new line
+
+--- inline elements:these take a small ammount of space according to our like widgth hei etc
+
+these elemnts starts on same line 
+
+types of element:
+=================
+
+---container element:contain start and end tag
+
+---EMPTY ELEMENT:contain only statt tag
+
+how meta is use ful?
+===================
+for ex: u typed tutorials to html5 in chrome then it finds keywords forthis tutorial and html5 are keyword so it displays all pages having these keywords.this way meta is used
+
+to display contents we us
+
+<meta name="keywords" content="tytorial,html5"/>
+
+<meta http-equiv="refresh" content="30"/>
+sets page refresh time to 30sec
+
+Ray, a developer, has created two web pages namely page1 and page2, for his website. He wants to attach page2 into page1, so that, it will be displayed as a single page. Which are the following code needed to implement the ray’s requirement?
+
+Note-:page1 and page2 are in the same directory.
+<iframe src="./page2.html" name="myFrame"></iframe>
+
+
+insert and delete tag in  html
+
+<p>hi jeev is <del>gay</del> <ins>boy</ins>
+
+==================================
+if you want to accept even num
+
+<input type="number" step="2">
+
+========================================================================================================================================
+css selectors:
+
+element selec:
+
+<style>
+p,h1--------------{
+color:blue;
+text-align:center;
+text-weight:italic;
+}
+<p>hi</p> 
+---o/p: for hi -all p style applied
+============================
+css id :
+#paral{
+text-align:center;
+}
+<p id="para1">hi</p>
+===========================
+class select
+
+.h1{
+color:blue;
+}
+<h1>no</h1>
+===========
+we can also specify specific elem effect by class:
+p.color{
+color:red;
+}
+<h1 class="color">hi</h1>
+<p class="color">this will effect</h1>
+--------o/p:h1 is not effect 
+but p color change to red
+=============
+more than one class also used
+
+.one{
+color:red;
+}
+.two{
+text-transform:uppercase;
+}
+<h1 class="one two">this </h1>
+========================
+universal selector:
+*{
+color:blue;
+}
+---apploed to every element on page
+========================================
+grouping selectors:select all elements with same style:
+h1,p,h2{
+color:red;
+}
+<p>hi</p>
+<h1>ji</h1>
+<h2>jl</h2>
+===================================================
+css border colors:
+
+h1{
+border:2px solid blue;
+}
+<h1>hi</h1>
+=======================================
+background img:
+
+body{
+background-image:url("logo.jpg");
+backgroundz:repeat: repeat-x; /*repeat-y,repeat,no-repeat
+background-position:top right;
+}
+
+--------
+background-attachment:fixed;
+background-attachment:scroll;
+
+when fixed the back img is not move when scroll
+
+e=when scrol the bg img is also scroll
+
+
+in order to use all background in on e line it is background-shorthand
+
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+============
+border:
+-----
+h1{
+border-style:dotted,dashed,solid,double,groove,ridge,inset,outset;
+}
+
+h1{
+border-width:5px;
+bod=rder-color:green;
+}
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+
+-----border shorthand:
+p{
+border:width style color;
+}
+-------rounded border
+p{
+border-radius: 5px;
+}
+==============================================
+margin:auto;
+
+margin:top,right,bottom,left;
+========
+margin collapse:this happens on only top and bottom margins
+
+Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+h1 {
+  margin: 0 0 50px 0;
+}
+
+h2 {
+  margin: 20px 0 0 0;
+}
+=======
+padding:
+div{
+width:300px;
+padding:25px;
+}
+----
+here even though the width is 350 but it follow 300 in oreder to avoid it we use box-sizing
+
+div {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+-==================
+
+css box model:
+
+it consists of margins,pading,borders and actual content
+
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+======The total width of an element should be calculated like this:
+
+Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+
+The total height of an element should be calculated like this:
+
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+====================================
+outline :it is similar to border but diff is it is drawn out of border
+
+outline-offset:10px;
+used to add space b/w boder and out line
+======================================
+text-align-last:left; //starts frm left
+
+text-align:justify;// give equal width;
+
+---------
+p{
+direction:rtl;
+unicode-bidi:bidi-override;
+}
+----
+vertical align:used in images
+
+img.a {
+  vertical-align: baseline,text-top;
+}
+
+======
+text-decoration-line
+text-decoration-color
+text-decoration-style
+text-decoration-thickness
+text-decoration
+
+===text-shadow
+
+h2{
+text-shadow:2px 2px red;
+}
+
+text-indent:30px;
+
+start para after 30px space
+
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+
+=====================
+
+How to add font awsome icons
+
+<head>
+<script src="
+
+
+======================
+a:link,visited,hover,active;
+
+float: used to convert from block to inline...(multiple blocks to single blocks)
+margin:top left-right bottom
+margin:20px 50px-20px;
+
+display:inline-block to inline
+
+display:block-inline to block to show hide element
+ 
+display:none-to hide the element
+
+<!doctype html>
+<html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<style>
+body{
+background-color:blue;
+}
+ul{
+background-color:black;
+}
+
+ul li a{
+color:red;
+font-size:large;
+width:30%;
+}
+ul li{
+display:inline;
+padding:20px;
+}
+ul li a:hover{
+background-color:blue;
+}
+
+a{
+text-decoration:none;
+color:red;
+font-size:30px;
+}
+</style>
+</head>
+<body>
+<ul>
+<li>
+<a href="">MyHome</a></li>
+<li><a href="">My products</a></li>
+<li><a href="">Contact</a></li>
+<li><a href="">Login</a></li>
+<li><a hef="">Register</a></li>
+</ul>
+<h2>list without ul</h2>
+<li><a href="">Contact</a></li>
+<li><a href="">Login</a></li>
+<li><a href="">Logout</a></li>
+<li><a href="">Register</a></li>
+
+</body>
+
+=============================================
+========================================================================
+display:none;  it will remove elemnt and its space like hei width
+visibility;hidden;it will remove element and not its space
+
+===============================================================================
+pseudo classes:
+---
+u can style an elements based on structural/positional
+
+:first-child,:last-child,:nth-child(),:only-child
+
+:first-of-type,:last-of-type,:only-of-type
+==============================
+transitions:
+properties:
+1)transition-property
+---------
+what is it you want to change?(size,color,position,etc.)
+2)transition-duration
+----
+how long each trans last
+3)transition-timing
+-----
+should it be smooth
+
+4)transition-delay
+----
+how long should it take to begin transition
+
+div{
+color:red;
+background-color:pink;
+line-height:200px;
+text-align:center;
+width:250px;
+height:200px;
+border-radius:6px;
+transition-property:color,background-color,border-radius,width;
+transition-duration:.5s;
+transition-timing-function:linear;
+transition-delay:.5s;
+}
+div:hover{
+color:yellow;
+width:350px;
+background-color:orange;
+border-radius:50%;
+}
+div:active{
+color:green;
+width:550px;
+background-color:blue;
+border-radius:50%;
+}
+
+using shorthands:
+============
+transition:background .2s linear;
+border-radius:1s ease-in 1s;
+==========================================
+z-index: stacking your elements
+
+img:z-index:1
+text:z-index:2-----text appears
+
+
+dispaly:flex;---used to create layoutd put in single row
+flxedirection:row
+
+justify-content:space-between;---used to add space
+
+-------------------------------------
+display:flex;
+
+align-items:center;
+
+in order to use align-itens we must use grid or flex
+=================
+
+transiton:transform 0.3s cubic-bezier(0.075,0.82,0.165,1)
+
+}
+.left .logo:hover{
+transform:scale(1.1);
+}
+
+
+==============
+transform:translateY(-50%)
+used to put element in middle
+
+
+.item-bar::after{
+color:#3d4152;
+position:absolute;
+content:'';
+left:0;
+right:0;
+top:71px;
+height:1px;
+background:#e9e9eb;
+}
+-======================
+display:grid;  it is 2d struct which has col and rows
+grid-template-columns:repeat(4,24%);--create 4 columns with 25% space
+==================
+        color:inherit;  what ever the parent is having it takes same color.
+
+
+box-shadow:0 4px 7px 0 rgb(218 220 230/60%)
+
+
+word-break:break-word; uesd to break word
+
+
+
+===============================\
+.place:hover .quick-view{
+    visibility: visible !important;
+}
+.quick-view{
+    color:#686b78;
+    font-size:13px;
+    visibility: hidden;
+}
+
+when you hover it then it should visible
+
+and when not hover the quick view hidden
+=============================================
+in order to put bg color to none we keep
+
+background-color:transparent;
+
+===============================
+multiple bg images
+
+.F{
+margin-top:100px;
+background-color:blue;
+width:100%;
+margin-top:10px;
+margin-left:-10px;
+height:800px;
+text-align:center;
+padding:20px;
+animation: slide 5s infinite;
+}
+@keyframes slide{
+100%{
+background:url(https://dv40hkhdsohrj.cloudfront.net/assets/files/1782/monthly-hotel-los-angeles.700x600.jpg);
+}
+}
+==========
+in order to open link in new website we use 
+<a href="www.java.com" target="_balnk"></a>
+
+===========
+
+<svg tag used to maintain quality of image or icon
+<svg></svg>
+
+==========priority====
+tagname<class<id<inline
+======================
+inline>internal>external
+=====================================================
+boostrap used to give css to elements directly by importing link
+=====================================================
+1  margin:0 and paddding:0--used to remove extra margin similaarly pading.
+
+2 font-weight:200; used to give thickness
+
+
+3 display:flex;
+we can araange the flex items in row are center
+
+flex-flow:row;
+justify-content;center---used to put in center
+
+justify-content;spacebetween--used to add space b/w two flexdiv
+=================================
+we have to give spaceb.w to main div  so space apply to aLL div
+========
+<script tag fontawesome
+
+==========
+animation:
+====
+transform: scale(1.4);---used to zoom
+======
+in order to fast zomm
+we use
+============
+transition:transform .3s;----used to wait 3s and zomm
+=============
+padiing:top-bot  lef-rig;
+-=========

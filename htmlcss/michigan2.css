@@ -1,0 +1,13 @@
+h1{
+text-align:center;
+}
+div{
+background-color:blue;
+color:white;
+box-sizing:border-box;
+width:48%;
+display:inline-block;
+border:20px solid black;
+margin:30px;
+padding:5px;
+}

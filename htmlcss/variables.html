@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=UTF-8">
+<title>Variable</title>
+</head>
+<body>
+<h1 align="center"><font color="brown">Variables in C</font></h1>
+<h4>c variables</h4>
+<p>Variables are containers for storing data values.</p>
+<br>
+<p>In C, there are different types of variables (defined with different keywords), for example:</p>
+<ul><li>int</li>
+<li>float</li>
+<li>char</li>
+</ul>
+<hr color="brown">
+<h4>Declaring of variables</h4>
+<p>variables can be declared in two ways
+</p>
+<h4>indirect declaration</h4>
+<p>
+int myNum;
+<br>
+myNum = 15;
+<br></p>
+<h4>direct declaration</h4>
+<p>
+int myNum=15;
+<br>
+Here int is the type of data that a variable is storing...and myNum is the variable and we are initializing 15 to our variable.
+</p>
+<hr color="brown">
+<h4>Example</h4><br>
+void main() {<br>
+  int myNum = 15;
+<br>
+  printf("%d",myNum);
+<br>
+}
+<br><br>
+<button type="button" onclick="alert('15')">output</button>
+<br>
+<hr color="brown">
+<h4>Identifiers in c</h4>
+
+<p>C identifiers represent the name in the C program, for example, variables, functions, arrays, structures, unions, labels, etc.<br> An identifier can be composed of letters such as uppercase, lowercase letters, underscore, digits, but the starting letter should be either an alphabet or an underscore.
+</p>
+<h4>Rules of constructing identifiers</h4>
+<ol><li>The first character of an identifier should be either an alphabet or an underscore, and then it can be followed by any of the character, digit, or underscore.</li>
+<li>It should not begin with any numerical digit</li>
+<li>In identifiers, both uppercase and lowercase letters are distinct. Therefore, we can say that identifiers are case sensitive.</li>
+<li>Commas or blank spaces cannot be specified within an identifier.</li>
+<li>Keywords cannot be represented as an identifier.</li>
+<li>The length of the identifiers should not be more than 31 characters.</li>
+<li>Identifiers should be written in such a way that it is meaningful, short, and easy to read.</li>
+</ol>
+<hr color="brown">
+
+<h4>comments in c</h4>
+<p>Comments in C language are used to provide information about lines of code. It is widely used for documenting code.<br>
+ There are 2 types of comments in the C language.</p>
+<ol><li>Single-line comments</li>
+<li>Multi-line comments</li>
+<h4>Single line comments</h4>
+<p>Single line comments are represented by double slash \\. Let's see an example of a single line comment in C.<br>
+void main() {<br>
+  int myNum = 15;
+<br>
+//this is single line comment
+<br>
+  printf("%d",myNum);
+<br>
+}
+</p>
+<h4>Multi-line comments</h4>
+
+<p>Multi-Line comments are represented by slash asterisk \* ... *\. It can occupy many lines of code, but it can't be nested.
+void main() {<br>
+  int myNum = 15;
+<br>
+/*this is Multi line comment*\
+<br>
+  printf("%d",myNum);
+<br>
+}
+</p>
+</body>
+</html>

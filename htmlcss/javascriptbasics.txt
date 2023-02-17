@@ -1,0 +1,1154 @@
+//javascript tutorial:
+===========================================================================================================================================================
+we can write javascript in 3 ways:
+
+1.) inline-js: i go to paricular elements and as an attribute i wrire my alert
+(inline write in body)
+============
+2.) internal js:
+we can write by using script tag inside body
+
+<script></script>
+
+why internal jss is prefered over inline?
+
+to avoid repetation of code having same functionality.
+
+-------------------------------------
+3.) external js:(this also wite in body)
+
+we are going to write this in another file(app.js)
+
+why external jss is prefered in internal js?
+
+when we have multiple pages we use it.
+=================================
+
+how we can show data in js?
+
+1) alert("jeev");
+-----
+or
+2)console.log("veej");
+
+for console o/p go to inspect and go to console..
+-----------
+
+js basics:
+------
+1. VARIABLES:use it for storage,access,modify values.
+
+ways to create variable: let,const,var;
+
+1)  ex-1:
+let name="jeev";
+   console.log(name);
+   console.log(name);
+   console.log(name);
+
+--------
+ex-2:
+
+let address;
+let zip;
+let state;
+
+address="ramavarappadu 1-68/A";
+console.log(address);
+-----------------
+ex-3:
+
+let address,zip,state;
+zip: '60612';
+state:"Ap";
+console.log(zip);
+console.log(state);
+---------------------
+ex:4
+let address,zip,state;
+zip: '60612';
+state:"Ap";
+console.log(zip,address,state);
+ -------------------
+ex-4:
+  
+let address,zip,state;
+zip: '60612';
+state:"Ap";
+console.log(zip,address,state);
+zip:'1234';
+
+console.log(zip);
+
+//variables:storage,access,modify
+
+//how to create a var
+
+let name="johncena";
+console.log(name);
+
+let address;
+let zip;
+let state;
+
+address="1-109/A ramavarappadu";
+zip="3200";
+state="ap";
+console.log(name,address,zip,state);
+
+//we can cretae multiple vars
+
+let state,street;
+
+----------------------
+
+//RULES for naming variable
+
+. it contain digits,letter,underscore and $
+
+.it start with letter,$and _ but not start with digit
+
+.not use any keyword
+
+ex:let random$123-valid var
+
+ex2: let let----not valid var because let is a keyword
+
+ex3: let 1rvsp----not valid bea=cause var name cannot start with number
+
+------------------------
+
+2} WAYS OF CRETE VARIABLES(LET,CONST,VAR)
+------------------------------------------------
+var: we can change and redefine(declare and change)
+
+ex 1:
+var value="some value";
+console.log(value);//it gives same o/p
+
+
+ex 2:
+
+var value="some value";
+value="some other value";
+console.log(value);
+
+
+ex 3:
+we can also redefine 
+
+var value="some value";
+value="some other value";
+console.log(value);
+
+var value="hi"
+console.log(value);
+
+//we can use same var na,es
+-------------------------------------------------
+let: ,,we can only change but cannot redefine
+
+let name="jeev";
+ 
+let name="ki";//it give error ..it cannot redifine
+========================================================
+
+const:--once define cannot change
+
+const lastname="kumar";
+
+lastname="jeev";//once define cannot change
+=====================================================================
+
+// there is no diff b/w single and double quotes
+
+ex-1:
+const lastname="kumar";
+
+ex-2:
+const lastname='kumar';
+
+==============================================
+
+STRING conacting: combine two string values
+
+ex-1:
+const name="jeev";
+const name1="kumar";
+console.log("hello my full name is "+ name+ ' ' + name1);
+
+o/p:jeev kumar
+
+======
+ex-2:
+const name="jeev";
+const name1="kumar";
+const fullname=name+' '+name1;
+console.log("hello my full name is "+ fullname);
+==
+====
+==========================================================================
+
+//let vs var vs const
+
+================================================================
+
+console.log("Welcome to Programiz!");
+//by using var i can declare and modify
+var value="some value";
+console.log(value);
+
+value="jeev";
+console.log(value);
+
+value=0;
+console.log(value);
+==============================let:we can change but not modify============
+let name="veej";
+console.log(name);
+ name="li";
+ console.log(name);
+let name="vee";
+console.log(name);//in let we can change but not define
+=================const :we cannot change or modify============================
+const name="jeevan";
+console.log(name);
+
+name="je";
+console.log(name);
+
+const name="kum";
+console.log(name);
+
+
+===========================finish==========================================================================
+--------------------------------------
+how to create link
+
+ex:1
+
+
+
+
+const website="google;
+const url="https//google.com
+console.log(url);
+
+o/p:it shows link and navigate to google.com
+
+===============
+
+if i want my name in single quotes
+
+console.log("jee 'vkum' r");
+or
+console.log("jee '\vku\' r");
+
+const name="Welcome 'to' Programiz!"
+console.log(name);
+=====================================================================================================================================
+
+
+//NUMBERS
+//in java script dont declare type  like int number like that because it is loosely typed
+
+ex-1:
+
+const numbers=34;
+
+console.log(numbers);
+==============================
+we can change strings to nums
+
+ex-2":
+let pants="ji";
+pants=56;
+console.log(pants);
+
+0/p:56
+
+========
+ex-3;
+
+const num2=2.456;
+const num3="2.456";
+console.log(num2,num3);
+
+0/p: 2.456, '2.456'
+
+=======
+add two num
+
+const num2=2.456;
+const num3=2.456;
+
+const add=num2+num3;
+console.log(add);
+===================
+
+//+=,-=,/=,++,--,%(follow bodmas rule and left to right).
+
+=============
+1) modulus
+
+const slices=10;
+const children=3;
+const amount=slices%children;
+console.log(amount)//give rem
+-------
+div
+const pieces=slices/children;
+console log(pieces);//guve quo
+
+=============
+add,minus
+
+let num=40;
+let=num+5; 0r num+=5;
+console.log(num);
+
+==================================
+
+//can we add string and number 
+
+let num=10;
+let num2="10";
+let add=num+num2;
+console.log(add);//out put is 1010---so it just concatenates..and changed to string
+
+ex-2
+
+let num=10;
+let num2="10";
+let sub=num-num2;
+console.log(add);//for sub the math operation perfored--o/p:0
+
+================================================
+
+//numbers
+
+//in js it did not need to declre the type of the variable 
+
+//cont num1=2.456;  //--- this is number
+//const num2="2.456";  //----this is string(with double quotes)
+
+const num1=5;
+const num2=3;
+add=num1+num2;
+sub=num1-add+num2;
+console.log(add);
+
+console.log(sub);
+
+
+//+=,-=.\=.*=,--.++.%
+
+let num=10;
+num+=5;
+console.log(num);
+num*=10;
+console.log(num);
+
+//incre operators
+
+num++;
+console.log(num);
+num--;
+console.log(num);
+
+++num;
+console.log("==================");
+
+//pre vs post incre
+
+let x,y,z;
+x=5;
+y=0;
+z=0;
+console.log(x);
+//pst incre
+//====================
+y=x++;  //y=5  x=5+1=6  //first transfer and increase
+
+console.log(x,y);  //6 5
+
+//pre inc
+//==========================
+z=++x; //z=++6=7   //first increase and transfer
+console.log(x,z);  //7 7
+
+
+
+//=================================
+//% operator
+
+const slices=10;
+const child=3;
+const amount=slices%child;
+console.log(amount);
+
+
+//===========================================
+
+//js - 2nd class
+
+//datatypes:
+
+//we have 7datatypes
+
+//1. primitive: string, number, boolean, null,undefined,symbol
+
+//2.object: Array, function,string
+
+
+//=========================
+
+//string: 
+
+const text="jeevan";  //how to find type of data
+
+console.log(typeof text);  //ans: it shows string
+
+console.log(typeof "jeevan");
+
+//Number
+
+const num=45;
+console.log(typeof num); //o/p is number
+
+
+//boolean :true/false
+
+let val1=true;
+let val2=false;
+console.log(typeof val1); // o/p is boolean
+console.log(typeof val2);
+
+
+//null :
+
+const res=null;
+console.log(typeof res);//it shows type as object
+console.log(res);
+const res1=20+null; //if we add something with null then null become 0---0+20=20
+console.log(res1); //20
+
+
+
+//undefined
+
+let name;
+console.log(typeof name); //since i have not given any value it shows undefined
+name="jeev";
+console.log(typeof name);//string(if we define something it bomcome type of it or it is undefinrd)
+//symbol--discuss later(ES6)
+
+
+============================================================================================================================================================================================
+//2---
+
+//objects: array,function,
+
+//arrays: start form 0;  we indicate by []
+
+//const f1="jeev";
+//const f2="eev";
+//const f3="jev";
+//const f4="veev";
+
+const friends=['jeev','bob','veej','van',45,null,undefined,true,false]; //we can declare different types inside an array
+console.log(friends); //0/p [ 'jeev', 'bob', 'veej', 'van' ]
+
+//even we write const we can change values written inside array
+
+//access bob?(access array values)
+
+console.log(friends[1]);  //bob
+
+console.log(friends[3]);//van
+//==========================
+
+//how to store it some another variable
+
+const bestfriend=friends[3];
+console.log(bestfriend);
+
+//if i want to change values in array
+
+friends[4]=111;
+console.log(friends[4]);
+
+
+===================================================
+
+//2-
+
+//functions
+
+// in funs we declare a fun and we invoke that func
+
+function hell(){
+    console.log("hi there");          //declaration of fun
+    console.log("hi there how r u");
+    console.log("are u fine");
+}
+
+hell();  //invoke or calling a function
+
+console.log("hi there again");
+
+hello();
+console.log("========new topic===================");
+
+
+//parameters passing
+
+function hello(name){
+    console.log("hi there" +" "+ name);
+}
+hello('jeev'); //print : hello there jeev
+
+hello('veej');// hello there veej
+hello(45);// hello there 45
+
+console.log("========new topic==========================");
+
+//multiple parametres
+
+function hello1(name,lname){
+    console.log("hi there" +" "+ name+""+lname);
+    
+}
+hello1('jeev','pothana');
+====================================================================
+
+////functions:  return
+//cm to inches converter// 1inch=2.54cm
+
+const wallheight=80;
+
+function calculate(value){
+    console.log("thr value in cm is"+ value*2.54+ "cm");
+}
+//calculate(100);
+//calculate(wallheight);
+
+//i want to store my result in another var
+
+const width=calculate(100);
+console.log(width);// o/p :undefined because we are just calling but not storing
+const height=calculate(wallheight);
+//im taking result in array
+//in order to get something out of fun
+
+
+const dimensions=[width,height];
+console.log(dimensions);
+//===============
+
+const wallheights=80;
+
+function calculate1(value){
+    //console.log("thr value in cm is"+ value*2.54+ "cm");
+    return value*2.54;
+}
+//calculate(100);
+//calculate(wallheight);
+
+//i want to store my result in another var
+
+const width1=calculate1(100);//it become 254
+
+const height1=calculate1(wallheights);
+//im taking result in array
+//in order to get something out of fun we use return
+
+
+const dimensions1=[width1,height1];
+console.log(dimensions1);
+
+//================================================================================================================================
+
+
+//ways to create function
+
+function addvalues(num1,num2){
+    return num1 + num2;
+}
+console.log(addvalues(20,30));//50
+const secvalue=addvalues(5,10);
+console.log(secvalue);//15
+//=====================
+
+//2.
+
+const add=function(n1,n2){
+    return n1+n2;
+}
+const third=add(5,7);
+console.log(third);
+
+const values=[secvalue,third,add(5,50)];
+console.log(values);
+
+
+//3.
+
+const multiply=(a,b) =>{
+    return a*b;
+    
+};
+console.log(multiply(5,6));
+//its unclear 
+
+//4.if not expect paranthesis
+
+
+cost tet=()=>"hi";
+console.log(tet());
+
+cost text=()=>{
+    console.log('hello world')
+    return 'this is imaging';
+}
+}
+
+======================================
+//object
+
+//object
+
+const person={
+    name:'jeevam',
+    lastname:'pothana',
+    age:23,
+    education:true,
+    married:false,
+    //we can pass arrays
+    siblings:['anna','susan','peter'],
+    //we can pass funs
+    //ther are two ways to create fun inside obj
+    //1.
+    
+  //  greeting:function(){ //here grreting is fun //name
+    //    console.log("hello there");
+    //},
+    //2.
+    
+    greeting(){
+        // console.log("hello there");
+        return "hello";
+    }
+};
+
+//hoe to access it
+console.log(person.name);
+console.log(person.married);
+console.log(person.age);
+
+//access array
+console.log(person.siblings);
+console.log(person.siblings[2]);
+
+//how to invoke fun
+//person.greeting();
+ console.log(person.greeting());
+
+//can we change
+person.age=12;
+console.log(person.age);// age change to 12
+=========================================
+
+//conditional operators
+
+//conditional operators
+
+//comparison operators
+//>,<,<=,>=,==,===,!=,!==
+
+//if 
+
+if(true){
+    console.log('hello');
+}
+if(false){
+   console.log('hello there'); 
+}
+
+const value=true;
+if(value){
+    console.log("value is true");//since val is true so it executes
+}
+
+const value2=2<1;
+if(value2){
+    console.log("2 less than one");
+}
+
+
+const value3=2>1;
+if(value3){
+    console.log("2 more than one");
+}
+
+//if else
+
+if(3>4){
+     console.log("3 greater than 4");
+}
+else{
+    console.log("3 less than 4");
+}
+
+let n1=6;
+let n2=6;
+if(n1>n2){
+    console.log("n1>n2");
+}
+else if(n1<n2){
+       console.log("n2>n1"); 
+}
+else{
+        console.log("n1==n2");
+}
+    
+
+//===========================
+
+//==  vs  //===
+
+//== :checks only value
+
+//===: checks value and type
+
+n1=6;
+n2=6;
+if(n1==n2){
+        console.log("n1==n2");
+}
+
+if(n1===n2){
+        console.log("again n1===n2");
+}
+n1=6;
+n2='6';
+if(n1==n2){
+        console.log(" hi n1==n2"); //== checks only value //so o/p=true
+}
+
+else if(n1===n2){
+        console.log(" no again n1===n2"); //here it checks val with type so here one var is number and another is string so its false
+        
+        
+        //!(invert)
+        
+        let val4=1>2;
+        if(!val4){
+            console.log('we made it look right');
+        }
+        
+}
+
+
+=====================================
+
+
+====================================================================================================================================================
+
+//logical operators
+//logical operators
+
+//and or not
+
+let name="peter";
+let age=24;
+if(name==='bod'){
+    console.log("hello there user");
+}
+else{
+    console.log("wrong");
+}
+
+//|| or
+
+if(name==='bob'||age===24){
+     console.log("hello there user"); //any one is true it return true
+}
+else{
+    console.log("wrong");
+}
+
+//&& and
+
+if(name==='bob'&& age===24){
+     console.log("hello there user"); //both cond must be true so it returns false
+}
+else{
+    console.log("wrong");
+}
+
+
+
+==================================================================================================================================================================
+//switch
+
+
+//switch
+//dice: 1 to 6
+
+let dice=1;
+
+switch(dice){
+    case 1:
+        console.log("you got one");
+break;  //if there is no break then it executes false stats also
+  case 2:
+        console.log("you got 2");
+break;
+  case 3:
+        console.log("you got 3");
+break;
+  case 4:
+        console.log("you got 5");
+break;
+
+default:
+console.log("invalid");
+}
+
+
+=======================================================================================================================================================================================================
+
+//loops
+
+//loops
+
+//repeatedly runs a block of code the condition is true
+//while
+
+let amount=10;
+while(amount>0){  //upto >0 it executes
+    console.log('i have'+ amount+' dollars and i am to the mail');
+    amount--;
+}
+console.log(amount);
+
+//=====================
+
+//do-while  //first executes ststement and executes the condition
+
+amount=10;
+do{
+   console.log('i have'+ amount+' dollars and i am to the mail');
+    amount--; 
+}
+while(amount>10);
+
+
+
+console.log(amount);
+
+
+=====================================================================================================================================================================================
+//for
+
+//for
+
+let i;
+
+for(i=0;i<10;i++){
+    console.log("the val of i is " + i);
+}
+
+
+//print arrays
+
+const names=['an','ja','va','la'];
+
+for(let i=0;i<names.length;i++){ //names.length used to find length of array
+    console.log(names[i]);
+}
+
+//=====================================================
+
+// here we declare i with const so error occurs
+const name=['an','ja','va','la'];
+
+for(const i=0;i<name.length;i++){ //names.length used to find length of array
+    console.log(name[i]);
+}
+
+
+==============================================================================================================================================================================================
+//string properties and methods
+
+//string properties and methods
+
+let text='peter jordan';
+
+//to find length we use ,length
+
+//let res=text.length;
+//console.log(res);
+
+console.log(text.toLowerCase());
+
+console.log(text.toUpperCase());
+
+console.log(text.charAt(0));//find char at o
+
+console.log(text.charAt(text.length-1));
+console.log(text.indexOf("t"));
+
+console.log(text.indexOf("e"));
+
+console.log(text.trim());//trim the text
+
+console.log(text.startsWith("peter"));//to check start with peter or not
+
+console.log(text.includes("eter"));// if our text is have eter it shows true
+
+
+console.log(text.slice(0,2)); //it will pict letters from 0 t0 2-1.
+
+console.log(text.slice(-3)); //if negative values is given it starts from last //
+
+
+
+===================================================================================================================================================================================================
+//array properties and methods
+//array properties and methods
+
+let names=['anna','jaan','vani','laya'];
+
+console.log(names.length);
+
+console.log(names[3]);
+
+console.log(names[names.length-1]);//used to print last element
+console.log(names[names.length-1].length);
+
+
+const lastnames=["peter","onion","banana"];
+
+//concat
+
+const allnames=names.concat(lastnames);
+console.log(allnames);
+
+
+//reverse
+
+console.log(allnames.reverse());
+
+//unshift -adds elements in begining of array
+
+allnames.unshift("susy");
+allnames.unshift("anna");
+console.log(allnames);
+
+//shift-removes from begining
+
+allnames.shift();
+console.log(allnames);
+
+//push add at end
+allnames.push("susy");
+allnames.push("jee");
+console.log(allnames);
+
+//pop remove from end
+allnames.pop();
+allnames.pop();
+console.log(allnames);
+
+
+//min and max
+
+let num=[1,2,3,4,5,6];
+let max=num[0];
+let min=num[0];
+for(let i=0;i<num.length;i++){
+   if(max<num[i]){
+       max=num[i];
+   }
+   
+    if(min<num[i]){
+       min=num[i];
+   }
+   
+   
+}
+console.log(max);
+
+console.log(min);
+   
+
+
+=====================================================================================================================================================================================
+
+//template literals
+
+//Backticks--(above tab keys)
+
+//interpolation ${}-insert expression ${value}
+
+const name="jeev";
+const age=25;
+//form sentence
+const sentence="hey it's "+ name +"and he is"+ age + "years old";
+console.log(sentence);
+
+//backtic remove double comas etc 
+
+const value=`hey it's ${name} and he is ${age} years old .and i can perfom math also$(value}`;
+console.log(value);
+
+//=========================================================
+
+//primitive vs non primitive
+
+const number=1;
+let number2=number;// if we change number to 5 it not effect number 2 it is primitive
+
+console.log(`number2=${number2}`);
+console.log(`number=${number}`);
+
+//===============================
+
+//non primitive
+
+let person={name:"bob" };
+let person=person;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===========================================================================================
+
+
+//data types:7 dtata types
+
+1) primitive:string,numbers,boolean,null,undefines,symbol;
+
+2) object--arrays,func,objects
+
+--------
+
+//string
+
+const text="some text";
+console.log(type of text);//o/p is string(type);
+
+//number
+
+const num=10;
+console.log(type of num);// o/p is number
+
+
+//boolean--true/false
+
+let value1=true;
+let value1=true;
+console.log(type of value1);
+console.log(type of value2);//o/p is boolean
+
+//null
+
+const result=null;
+console.log(type of result);//0/p is object
+
+
+//undefined
+
+let name;
+console.log(type of name);//gives undefined
+
+=======================================
+
+//Arrays-----[],0 index based
+(for arrays we use const mostly)
+
+const friends=['anna','peter','bob','suzi',67,true,null];
+console.log(friends);
+//o/p:['anna','peter','bob','suzi',67,true,null]
+
+how do we extract?
+
+
+const friends=['anna','peter','bob','suzi',67,true,null];
+console.log(friends[2]);//o/p: bob
+
+
+let bestfriend=friends[0];
+console.log(bextfriend);//o/p:anna
+================================
+//how can we modify
+
+friends[5]=64;
+console.log(friends);
+=====================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body{
+background-color:grey;
+}
+header{
+background-color:#5b99ab;
+margin:2px;
+padding-bottom:15px;
+text-align:center;
+}
+h1{
+color:white;
+font-family:arial;
+text-transform:capitalize;
+text-align:center;
+}
+div a{
+background-color:white;
+display:inline-block;
+color:blue;
+width:22%;
+height:40px;
+font-size:150%;
+}
+h2{
+background-color:#13a0d4;
+}
+section div{
+display:inline-block;
+width:40%;
+}
+footer{
+background-color:#5b99ab;
+}
+img:hover{
+width:75px;
+opacity:10%;
+}
+ul{
+list-style-type:square;
+
+}
+::selection{
+color:red;
+background-color:green;
+}
+/*h1::before{
+content:url(logo.jpg);
+}*/
+
+/*a[href$=".org"]{
+background-color:yellow;
+}*/
+
+/*a[target]{
+color:green;
+}*/
+
+/*header div:hover{
+background-color:brown;
+}*/
+
+/*header{
+background-image:url(jeev.jpg);
+backgroung-repeat:repeat-x;
+ background-position: 20px 10px;
+}*/
+
+/*#grad{
+background-color:red;
+background-image:linear-gradient(red,yellow);
+}*/
+
+/*#grad{
+background-color:red;
+background-image:linear-gradient(to bottom right,red,yellow);
+}
+*/
+
+.grad{
+background-color:red;
+background-image:linear-gradient(180deg,red,yellow);
+}
+
+
+/*#grad {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+*/
+
+
+/*#grad{
+background-image: linear-gradient(to right,rgb(128,52,235,0),rgb(128,52,235,1));
+}*/
+
+#grad {
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+
+a:hover{
+color:pink;
+background-color:red;
+}
+
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+font-style:italic;
+}
+
+</style>
+
+<head>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<header class="grad">
+<div>
+<h1>Colleen van lent</h1>
+<a href="">one</a>
+<a href="">two</a>
+<a href="">three</a>
+<a href="">four</a>
+</div>
+</header>
+
+<section>
+<div>
+<h2>Fav foods</h2>
+<ul>
+<li>apples</li>
+<li>pines</li>
+<li>papaya</li>
+<li>pogo</li>
+</li>
+</div>
+<div>
+<h2>achievements</h2>
+<label for="avg">Progress<20></label>
+<meter id="avg" min="0" max="100" value="20">20%</meter>
+<br>
+
+<label for="avg">Progress<67></label>
+<meter id="avg" min="0" max="100" value="67">67%</meter>
+<br>
+<label for="avg">Progress<100></label>
+<meter id="avg" min="0" max="100" value="100">100%</meter>
+<br>
+<br>
+</div>
+</section>
+<h2>more about me</h2>
+<details open>
+<summary>my childhood</summary>
+<p>I grew up in india im good.</p>
+</details>
+
+<footer id="grad">
+
+<p><img src="logo.jpg">hi this is created <a href="https://thenew.org" target="">usharama</a></p>
+</footer>
